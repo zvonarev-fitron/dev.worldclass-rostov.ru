@@ -32,7 +32,7 @@
     artisan
     npm
     symlink
-    copy
+{{--copy--}}
 @endstory
 
 @task('git', ['on' => 'web'])
