@@ -18,7 +18,7 @@
 
     $db_password = 'qazQAZwsxWSX';
     $db_user = 'devworldclass';
-    $db_tablespace = 'devfitronrostovru';
+    $db_tablespace = 'devworldclassrostovru';
     $db_name = 'dev_wc';
     $db_schema = 'dev';
 @endsetup
