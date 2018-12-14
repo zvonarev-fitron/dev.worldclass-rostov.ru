@@ -1,0 +1,26 @@
+{
+  "name": "ringer/admin-panel",
+  "description": "Admin panel",
+  "license": "MIT",
+  "version": "1.0.1",
+  "authors": [
+    {
+      "name": "alexzvon",
+      "email": "zvon.lexa@yandex.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload":{
+    "psr-4":{
+      "Ringer\\AdminPanel\\": "src/"
+    }
+  },
+  "extra":{
+    "laravel":{
+      "providers": [
+        "Ringer\\AdminPanel\\AppServiceProvider"
+      ]
+    }
+  }
+}

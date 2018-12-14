@@ -1,0 +1,26 @@
+html {
+  //overflow: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#admin {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  width: 99.5vw;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.content {
+  position: relative;
+  flex: 1;
+}

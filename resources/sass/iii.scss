@@ -1,0 +1,58 @@
+.activity_header {
+  font-size: 26px;
+  font-family: "Avenir Next Cyr W00 Regular", sans-serif;
+  font-weight: 100;
+  margin-top: 0;
+  text-align: center;
+  @media (min-width: 48em) { margin-bottom: 30px;}
+}
+.activity_footer {
+  padding: 20px;
+  text-align: center;
+  .activity_footer_a{
+    color: #ed1c24;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Avenir Next Cyr W00 Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+    &:hover {
+      border-bottom: 1px solid;
+      transition: all 0.5s;
+    }
+  }
+}
+.flux_parralax_index{
+  text-align: center;
+  .flux_parralax_index_h {
+    font-family: "Avenir Next Cyr W00 Thin", sans-serif;
+    font-size: 82px;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 150px;
+    padding-top: 90px;
+  }
+}
+.flux_parralax_index_a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ed1c24;
+  letter-spacing: 2px;
+  font-weight: 100;
+  padding: 7px 15px 8px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 22px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-family: "Avenir Next Cyr W00 Bold", sans-serif;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: #cb0002;
+    transition: all 0.5s;
+  }
+}
+
