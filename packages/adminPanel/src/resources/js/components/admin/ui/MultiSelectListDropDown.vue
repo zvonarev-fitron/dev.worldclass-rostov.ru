@@ -20,12 +20,12 @@
 </template>
 <script>
 
-    import { library } from '@fortawesome/fontawesome-svg-core'
-    import { faEye } from '@fortawesome/free-regular-svg-icons'
-    import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-    library.add(faEye, faAngleUp)
+    // import { library } from '@fortawesome/fontawesome-svg-core'
+    // import { faEye } from '@fortawesome/free-regular-svg-icons'
+    // import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+    // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+    //
+    // library.add(faEye, faAngleUp)
 
     export default {
         name: "MultiSelectListDropDown",
@@ -41,7 +41,7 @@
                 isActive: true
             }
         },
-        components: { FontAwesomeIcon }
+//        components: { FontAwesomeIcon }
     }
 </script>
 

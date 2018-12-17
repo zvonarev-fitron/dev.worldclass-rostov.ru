@@ -21,6 +21,9 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
+        $this->loadRoutesFrom(__DIR__.'/routes/api.php');
+
+
 //        Resource::withoutWrapping();
 
 //        $this->addCommands()
@@ -28,7 +31,7 @@ class AppServiceProvider extends ServiceProvider
 //            ->loadDependencies()
 //            ->publishDependencies()
 //            ->publishResources();
-        $this->loadDependencies()->publishDependencies();
+//        $this->loadDependencies()->publishDependencies();
     }
 
 //    private function addCommands()
@@ -66,7 +69,7 @@ class AppServiceProvider extends ServiceProvider
 //        $this->mergeConfigFrom(__DIR__.'/config/config.php', 'enso.config');
 //        $this->mergeConfigFrom(__DIR__.'/config/themes.php', 'enso.themes');
         $this->loadRoutesFrom(__DIR__.'/routes/api.php');
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+//        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->loadViewsFrom(__DIR__.'/resources/views', 'ringer/admin-panel');
 
 //        dd('aassssssssssdddddddddddddfffffffffffffggggggggggggggg');

@@ -22,16 +22,16 @@
 
 <script>
 
-    import { library } from '@fortawesome/fontawesome-svg-core'
+//    import { library } from '@fortawesome/fontawesome-svg-core'
 //    import { faEye } from '@fortawesome/free-regular-svg-icons'
-    import { faAngleUp, faFilter } from '@fortawesome/free-solid-svg-icons'
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+//    import { faAngleUp, faFilter } from '@fortawesome/free-solid-svg-icons'
+//    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-    library.add(faFilter, faAngleUp);
+//    library.add(faFilter, faAngleUp);
 
     export default {
         name: "SelectFieldFilter",
-        components: { FontAwesomeIcon },
+//        components: { FontAwesomeIcon },
         props: {
             fields: {
                 type: Array,

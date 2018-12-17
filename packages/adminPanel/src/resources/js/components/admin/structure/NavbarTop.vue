@@ -3,7 +3,7 @@
         <ul class="top_nav_ul">
             <li class="top_nav_ul_li">
                 <a href="/" title="Перейти на сайт"  class="top_nav_ul_li_a">
-                    <img src="http://worldclass-rostov.loc/svg/logo.svg" alt="Перейти на сайт" class="logo_image">
+                    <img src="http://dev.worldclass-rostov.ru/svg/logo.svg" alt="Перейти на сайт" class="logo_image">
                 </a>
             </li>
             <li class="top_nav_ul_li">
@@ -25,15 +25,15 @@
 
 <script>
     import { mapState, mapMutations} from 'vuex'
-    import { library } from '@fortawesome/fontawesome-svg-core'
-    import { faOutdent } from '@fortawesome/free-solid-svg-icons'
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-    library.add(faOutdent);
+    // import { library } from '@fortawesome/fontawesome-svg-core'
+    // import { faOutdent } from '@fortawesome/free-solid-svg-icons'
+    // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+    //
+    // library.add(faOutdent);
 
     export default {
         name: "NavbarTop",
-        components: { FontAwesomeIcon },
+//        components: { FontAwesomeIcon },
         computed: {
             ...mapState('AsideLeft', ['is_toggle_aside_left'])
         },
