@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import { mapState } from 'vuex';
+    import { mapState, mapMutations } from 'vuex';
     import ViewTable from '../comp/ViewTable'
 
     export default {
@@ -11,6 +11,14 @@
         components: { ViewTable },
         computed: {
             ...mapState('UserTable', ['columns'])
+        },
+        mounted() {
+            this.$on('onReload', function(){
+                this.reload();
+            });
+        },
+        methods: {
+            ...mapMutations('UserTable', {reload: 'read', setSort: 'setSort'})
         },
         watch: {
             columns: function(){

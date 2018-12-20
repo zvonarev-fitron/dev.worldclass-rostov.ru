@@ -20,14 +20,8 @@
 </template>
 
 <script>
-
-    // import { library } from '@fortawesome/fontawesome-svg-core'
-    // import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
-    // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
     export default {
         name: "SelectCountRowTable",
-//        components: { FontAwesomeIcon },
         props: {
             listCount: {
                 type: Array,
@@ -36,26 +30,9 @@
         },
         data(){
             return {
-            //     listCount: [
-            //         { count: 10, active: false },
-            //         { count: 15, active: false },
-            //         { count: 20, active: false },
-            //         { count: 25, active: false },
-            //         { count: 30, active: false },
-            //         { count: 35, active: false },
-            //         { count: 40, active: false },
-            //         { count: 45, active: false },
-            //         { count: 50, active: false }
-            //     ],
                 isShow: false
             }
         },
-        // mounted(){
-        //     for(let list of this.listCount)
-        //         if(list.active)
-        //             return;
-        //     this.listCount[0].active = true;
-        // },
         methods: {
             activeCount(){
                 for(let list of this.listCount)

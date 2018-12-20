@@ -18,7 +18,11 @@ import {
     faUserTie,
     faClipboardList,
     faPlaceOfWorship,
-    faAngleLeft
+    faAngleLeft,
+    faSort,
+    faSortAmountDown,
+    faSortAmountUp,
+    faSync
 } from '@fortawesome/free-solid-svg-icons'
 //Brans
 import {
@@ -35,8 +39,11 @@ import {
     faBell,
     faNewspaper
 } from '@fortawesome/free-regular-svg-icons'
-//import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(
+    faSort,
+    faSortAmountDown,
+    faSortAmountUp,
+    faSync,
     faOutdent,
     faEye,
     faTimesCircle,
@@ -61,8 +68,12 @@ library.add(
     faPlaceOfWorship,
     faAngleLeft
 );
+
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+
+import axios from 'axios';
+//Vue.component('axios', axios);
 
 import AdminPanel from './components/admin/AdminPanel';
 
@@ -71,3 +82,4 @@ const admin = new Vue({
     router,
     ...AdminPanel
 }).$mount('#admin');
+faTimesCircle

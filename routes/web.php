@@ -244,7 +244,9 @@ Route::get('proba_get', function(){
     ];
 });
 
-Route::get('/admin/{any?}', function(){ return view('ringer/admin-panel::index'); });
+//Route::get('admin', function(){
+//    return view('ringer/admin-panel::index');
+//});
 
 //Route::get('/admin/{any}', function($any){
 //

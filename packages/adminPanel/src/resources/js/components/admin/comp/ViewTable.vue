@@ -5,10 +5,10 @@
             <SelectCountRowTable :listCount="columns.listCount"></SelectCountRowTable>
             <button class="sync_users" v-on:click="reload">
                 <i class="sync_icon">
-                    <FontAwesomeIcon v-bind:icon="['fas', 'sync']"></FontAwesomeIcon>
+                    <font-awesome-icon v-bind:icon="['fas', 'sync']"></font-awesome-icon>
                 </i>
             </button>
-            <SelectFieldFilter v-bind:fields="columns.props"></SelectFieldFilter>
+            <SelectFieldFilter v-bind:fields="columns.props" v-on:onSetSortFieldFilterCode="setSortFieldFilterCode">{{ columns.selectFieldFilterObj.title }}</SelectFieldFilter>
             <SearchInput v-model="columns.search" class="search_input" :list="columns.props"></SearchInput>
             <button class="add_user">Добавить</button>
         </div>
@@ -19,6 +19,7 @@
                         <span class="thead_title">{{ prop.title }}</span>
                         <i v-bind:class="['tsort', { 'sort': !!prop.sort }]" v-on:click="selectSort(prop)">
                             <font-awesome-icon v-bind:icon="iconSelect(prop.sort)"></font-awesome-icon>
+                            <!--<font-awesome-icon v-bind:icon="['fas','sort']"></font-awesome-icon>-->
                         </i>
                         <i class="tsort" v-if="!!prop.sort" v-on:click="noneSort">
                             <font-awesome-icon v-bind:icon="['far', 'times-circle']"></font-awesome-icon>
@@ -50,16 +51,9 @@
     import SearchInput from '../ui/SearchInput'
     import SelectFieldFilter from '../ui/SelectFieldFilter'
 
-    import { library } from '@fortawesome/fontawesome-svg-core'
-    import { faTimesCircle } from '@fortawesome/free-regular-svg-icons'
-    import { faSort, faSortAmountDown, faSortAmountUp, faSync } from '@fortawesome/free-solid-svg-icons'
-    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-    library.add(faSort, faTimesCircle, faSortAmountDown, faSortAmountUp, faSync);
-
     export default {
         name: "ViewTable",
-        components: { MultiSelectListDropDown, SelectCountRowTable, FontAwesomeIcon, SearchInput, SelectFieldFilter },
+        components: { MultiSelectListDropDown, SelectCountRowTable, SearchInput, SelectFieldFilter },
         props: {
             columns: {
                 type: Object,
@@ -67,10 +61,13 @@
             }
         },
         methods: {
+            setSortFieldFilterCode(obj){
+                this.$parent.setSort(obj);
+            },
             iconSelect(sort){
-                if(undefined == sort) return 'sort';
-                if('asc' == sort) return 'sort-amount-down';
-                if('desc' == sort) return 'sort-amount-up';
+                if(!sort) return ['fas','sort'];
+                if('asc' == sort) return ['fas','sort-amount-down'];
+                if('desc' == sort) return ['fas','sort-amount-up'];
             },
             selectSort(in_prop){
                 let sort = in_prop.sort;
@@ -110,12 +107,13 @@
                  return 'text-align: ' + r + ';';
             },
             reload(){
-                alert('reload')
+//                alert('reload');
+//                this.$emit('onReload');
+                this.$parent.$emit('onReload');
             },
             dbClick(event){
                 console.log(event.target.dataset.id);
                 event.stopPropagation();
-//                alert('dbClick');
             },
             context(event){
 //                console.log(event.target);

@@ -7,16 +7,8 @@
 </template>
 
 <script>
-    // import { library } from '@fortawesome/fontawesome-svg-core'
-    // import { faTimesCircle } from '@fortawesome/free-regular-svg-icons'
-    // import { faSearch } from '@fortawesome/free-solid-svg-icons'
-    // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-    //
-    // library.add( faSearch, faTimesCircle );
-
     export default {
         name: "SearchInput",
-//        components: { FontAwesomeIcon },
         props: {
             list: {
                 type: Array,

@@ -1,10 +1,18 @@
 <template>
-    <footer class="footer">Footer</footer>
+    <footer class="footer">
+        Footer:
+        <p v-if="!!debug">{{ debug }}</p>
+    </footer>
 </template>
 
 <script>
+    import { mapState } from 'vuex';
+
     export default {
-        name: "FooterBottom"
+        name: "FooterBottom",
+        computed: {
+            ...mapState('UserTable', ['debug'])
+        }
     }
 </script>
 

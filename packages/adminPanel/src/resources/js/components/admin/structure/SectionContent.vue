@@ -20,16 +20,16 @@
     position: absolute;
     top: 55px;
     bottom: 0;
-    left: 15.1vw;
-    width: 84.4vw;
+    left: 18.1vw;
+    width: 81.4vw;
     border: 1px solid #9d9d9d;
     border-radius: 3px;
     box-sizing: border-box;
     overflow: auto;
     transition: left .5s ease, width .5s ease;
     &.is_colapsed{
-        left: 4.1vw;
-        width: 95.4vw;
+        left: 2.5vw;
+        width: 97vw;
     }
     &::-webkit-scrollbar-thumb {
         width: 4px;

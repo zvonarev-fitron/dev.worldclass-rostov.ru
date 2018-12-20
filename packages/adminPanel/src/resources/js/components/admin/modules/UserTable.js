@@ -1,14 +1,18 @@
+import axios from 'axios';
+
 export const UserTable = {
     namespaced: true,
     state: {
         columns: {
+            selectRowId: 0,
+            selectFieldFilterObj: {},
             props: [
-                {code: 'id', title: 'Идентификатор', type: 'int', visible: true, sort: null},
-                {code: 'name', title: 'Имя', type: 'str', visible: true, sort: null},
-                {code: 'phone', title: 'Телефон', type: 'phone', visible: true, sort: null},
-                {code: 'email', title: 'Почта', type: 'email', visible: true, sort: null},
-                {code: 'active', title: 'Статус', type: 'bool', visible: true, sort: null},
-                {code: 'create_at', title: 'Создан', type: 'date', visible: true, sort: null}
+                {code: 'id', title: 'Идентификатор', type: 'int', visible: true, sort: false},
+                {code: 'name', title: 'Имя', type: 'str', visible: true, sort: false},
+                {code: 'phone', title: 'Телефон', type: 'phone', visible: true, sort: false},
+                {code: 'email', title: 'Почта', type: 'email', visible: true, sort: false},
+                {code: 'active', title: 'Статус', type: 'bool', visible: true, sort: false},
+                {code: 'create_at', title: 'Создан', type: 'date', visible: true, sort: false}
             ],
             search: null,
             listCount: [
@@ -48,10 +52,34 @@ export const UserTable = {
                 { id: '23', name: 'Алексей', phone: '79525848858', email: 'zvon.lexa@yandex.ru', active: 'true', create_at: '02-11-2018' },
                 { id: '24', name: 'Алексей', phone: '79525848858', email: 'zvon.lexa@yandex.ru', active: 'true', create_at: '02-11-2018' },
                 { id: '25', name: 'Алексей', phone: '79525848858', email: 'zvon.lexa@yandex.ru', active: 'true', create_at: '02-11-2018' }
-            ]
-        }
+            ],
+        },
+        debug: false,
     },
     mutations: {
+        setSort: (state, obj) => { state.columns.selectFieldFilterObj = obj; },
+        read: (state) => {
+            let count = 0;
+            for(let i = 0; i < state.columns.listCount.length; i++)
+                count = state.columns.listCount[i].active ? state.columns.listCount[i].count : count;
+
+//            state.debug = 'search = ' + state.columns.search + ', count = ' + count;
+
+            let send = {
+                fieldsearch: state.columns.selectFieldFilterObj.code,
+                search: state.columns.search,
+                count: count,
+            };
+            axios.post('/admin/users', send)
+                .then(responce => {
+                    state.columns.items = responce.data;
+//                    state.debug = responce.data;
+                })
+                .catch(e => {
+                    state.debug = e;
+                })
+        },
+
         // columnVisibilite: (key, state) => {
         //     state.columns.props[key].visible = !state.columns.props[key].visible;
         // },
@@ -85,6 +113,5 @@ export const UserTable = {
             }
             return 'text-align: ' + r + ';';
         }
-
     }
 };

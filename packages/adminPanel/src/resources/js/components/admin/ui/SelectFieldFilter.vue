@@ -5,14 +5,14 @@
             <i class="first_icon">
                 <font-awesome-icon :icon="['fas', 'filter']" />
             </i>
-            <span>{{ field }}</span>
+            <span><slot></slot></span>
             <i class="last_icon">
                 <font-awesome-icon icon="angle-up" />
             </i>
         </button>
         <transition name="fade">
             <ul class="dropdown_list" v-if="isShow">
-                <li v-for="(lt, key) in fields" v-on:click="field = lt.title; isShow = !isShow" :class="[ 'dropdown_list_li', { 'is_active': classObject(lt.title)}  ]" :key="key">
+                <li v-for="(lt, key) in fields" v-on:click="setSortField(lt)" :class="[ 'dropdown_list_li', { 'is_active': classObject(lt.title)}  ]" :key="key">
                     {{ lt.title }}
                 </li>
             </ul>
@@ -21,17 +21,8 @@
 </template>
 
 <script>
-
-//    import { library } from '@fortawesome/fontawesome-svg-core'
-//    import { faEye } from '@fortawesome/free-regular-svg-icons'
-//    import { faAngleUp, faFilter } from '@fortawesome/free-solid-svg-icons'
-//    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-//    library.add(faFilter, faAngleUp);
-
     export default {
         name: "SelectFieldFilter",
-//        components: { FontAwesomeIcon },
         props: {
             fields: {
                 type: Array,
@@ -41,12 +32,15 @@
         data(){
             return {
                 isShow: false,
-                field: null
             }
         },
         methods: {
             classObject(title){
                 return title == this.field;
+            },
+            setSortField(obj){
+                this.isShow = !this.isShow;
+                this.$emit('onSetSortFieldFilterCode', obj);
             }
         }
     }

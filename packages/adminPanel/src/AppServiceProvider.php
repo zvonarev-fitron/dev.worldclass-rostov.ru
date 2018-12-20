@@ -1,5 +1,4 @@
 <?php
-
 namespace Ringer\AdminPanel;
 
 use Illuminate\Support\ServiceProvider;
@@ -21,8 +20,10 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/routes/api.php');
 
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'ringer/admin-panel');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/api.php');
 
 //        Resource::withoutWrapping();
 

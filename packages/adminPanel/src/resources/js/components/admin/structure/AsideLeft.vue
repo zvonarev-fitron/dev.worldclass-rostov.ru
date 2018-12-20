@@ -1,12 +1,13 @@
 <template>
     <aside :class="[ 'aside_left_menu', { 'is_colapsed' : is_toggle_aside_left } ]">
-        <tree-menu-ul :ar_menu="menus"></tree-menu-ul>
+        <tree-menu-ul :ar_menu="menus" :is_sub_menu="true"></tree-menu-ul>
     </aside>
 </template>
 
 <script>
     import { mapState, mapMutations } from 'vuex';
     import TreeMenuUl from '../ui/treemenu/TreeMenuUl';
+    import axios from 'axios';
 
     export default {
         name: "AsideLeft",
@@ -52,35 +53,66 @@
                             { id: '18', href: '/admin', icon: ['fas', 'place-of-worship'], name: 'Место 3', active: false },
                         ]
                     },
-                ]
+                ],
+                sub_menu: false,
             }
+        },
+        // mounted() {
+        //     this.$root.$on('selectmenu', id => {
+        //
+        //         console.log('selectmenu = ' + id);
+        //
+        //         this.menus = this.selectMenu(id, this.menus);
+        //     });
+        // },
+        created(){
+            axios.get('/admin/menu')
+                .then(responce => {
+                    this.menus = responce.data;
+                })
+                .catch(e => {
+                    console.log(e);
+                })
         },
         computed: {
             ...mapState('AsideLeft', ['is_toggle_aside_left']),
         },
-        methods: {
-            selectMenu(id) {
-                for(let menu of this.menus) {
-                    if (id == menu.id)
-                        menu.active = true;
-                    else
-                        menu.active = false;
-                }
-            },
-        }
+//         methods: {
+//             selectMenu(id, obj){
+//                 for(let i = 0; i < obj.length; i++) {
+//                     obj[i] = this.activeMenu(id, obj[i]);
+//
+//
+//                     if(!!obj[i].children) obj[i].children = this.selectMenu(id, obj[i].children);
+//
+//
+//                 }
+//                 return obj;
+//             },
+//             activeMenu(id, obj) {
+//
+// //                console.log(id + ' -- ' + obj.id);
+//
+//                 if(id == obj.id){
+//
+//                     console.log(id + ' -- ' + obj.id);
+//
+//                     obj.active = true;
+//                 }
+//                 else {
+//                     obj.active = false;
+//                 }
+//                 return obj;
+//             },
+//             toogleSubMenu(sub_menu) {
+//                 this.sub_menu = sub_menu;
+//             }
+//         }
     }
+
 </script>
 
-<style lang="scss" scoped>
-    .fade-enter-active {
-        transition: opacity .5s ease;
-    }
-    .fade-leave-active {
-        transition: opacity .5s ease;
-    }
-    .fade-enter, .fade-leave-to {
-        opacity: 0;
-    }
+<style lang="scss">
 .aside_left_menu{
     font-family: "Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     font-size: 0.8rem;
@@ -95,8 +127,9 @@
     top: 55px;
     bottom: 0;
     overflow-y: auto;
-    width: 15vw;
-    overflow-x: hidden;
+    overflow-x: auto;
+    width: 18vw;
+    /*overflow-x: hidden;*/
     transition: width .5s ease;
     &::-webkit-scrollbar-thumb {
         width: 4px;
@@ -105,64 +138,46 @@
     }
     &::-webkit-scrollbar {
         width: 6px;
+        height: 6px;
         border: 1px solid #eee;
     }
     &::-webkit-scrollbar-button {
         background-color: #cebdbd;
         height: 8px;
+        width: 8px
     }
     &.is_colapsed {
-        width: 4%;
+        width: 2.3vw;
+        overflow-x: hidden;
     }
-    .aside_left_menu_ul_li_a_i {
-        margin-left: 5px;
-        width: 20px;
-    }
-    .aside_left_menu_ul {
-        opacity: 1;
-        transition: width .5s ease;
-        .aside_left_menu_ul_li_a {
-            display: flex;
-            .aside_left_menu_ul_li_a_span {
-                white-space: nowrap;
-                .aside_left_menu_ul_li_a_span_name {
-                    width: 120px;
-                    display: inline-block;
-                }
-                .aside_left_menu_ul_li_a_span_count {
-                    background-color: black;
-                    color: yellow;
-                    width: 15px;
-                    display: inline-block;
-                }
-                .aside_left_menu_ul_li_a_span_icon {
-                    color: darkblue;
-                    margin-left: 3px;
-                }
-            }
+    ul{
+        &:first-child {
+            opacity: 1;
+            transition: width .5s ease;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
-        margin: 0;
-        padding: 0;
-        .aside_left_menu_ul_li {
+        li {
             list-style-type: none;
-            padding: 5px 0;
-            &:hover {
-                background-color: #f5f5f5;
-                .aside_left_menu_ul_li_a {
-                    color: #363636;
-                }
-            }
-            &.is_active {
-                background-color: #3273dc;
-                .aside_left_menu_ul_li_a {
-                    color: #fff;
-                }
-            }
-            .aside_left_menu_ul_li_a {
+            /*padding: 5px 0;*/
+            >a {
                 text-decoration: none;
-                color: #3d4852;
+                >i {
+                    display: inline-block;
+                    width: 15px;
+                    padding-left: 5px;
+                }
+            }
+            >i {
+                float: right;
+                margin-right: 5px;
+                cursor: pointer;
             }
         }
+        padding-left: 10px;
     }
 }
 </style>

@@ -25,15 +25,9 @@
 
 <script>
     import { mapState, mapMutations} from 'vuex'
-    // import { library } from '@fortawesome/fontawesome-svg-core'
-    // import { faOutdent } from '@fortawesome/free-solid-svg-icons'
-    // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-    //
-    // library.add(faOutdent);
 
     export default {
         name: "NavbarTop",
-//        components: { FontAwesomeIcon },
         computed: {
             ...mapState('AsideLeft', ['is_toggle_aside_left'])
         },
@@ -62,11 +56,11 @@
             align-items: center;
             .top_nav_ul_li {
                 list-style-type: none;
-                margin: 0 10px;
+                margin: 0 18px;
                 .top_nav_ul_li_a {
                     cursor: pointer;
                     .top_nav_ul_li_a_i {
-                        font-size: 30px;
+                        font-size: 21px;
                         color: black;
                     }
                     .logo_image {
