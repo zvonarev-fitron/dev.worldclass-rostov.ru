@@ -71,11 +71,12 @@ li {
         width: 100%;
         display: inline-block;
         &:hover {
-            background-color: lightgray;
+            color: white;
+            background-color: #3273dc;
         }
         &.router-link-active {
             color: white;
-            background-color: dodgerblue;
+            background-color: #3273dc;
         }
     }
 }

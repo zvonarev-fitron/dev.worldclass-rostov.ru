@@ -29,7 +29,7 @@
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		4: 0
+/******/ 		8: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -142,7 +142,7 @@
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2161,7 +2161,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faBlackTie */
 /* unused harmony export faBlackberry */
 /* unused harmony export faBlogger */
-/* unused harmony export faBloggerB */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return faBloggerB; });
 /* unused harmony export faBluetooth */
 /* unused harmony export faBluetoothB */
 /* unused harmony export faBtc */
@@ -2204,7 +2204,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faCreativeCommonsSamplingPlus */
 /* unused harmony export faCreativeCommonsShare */
 /* unused harmony export faCreativeCommonsZero */
-/* unused harmony export faCriticalRole */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return faCriticalRole; });
 /* unused harmony export faCss3 */
 /* unused harmony export faCss3Alt */
 /* unused harmony export faCuttlefish */
@@ -2243,7 +2243,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faEtsy */
 /* unused harmony export faExpeditedssl */
 /* unused harmony export faFacebook */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return faFacebookF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faFacebookF; });
 /* unused harmony export faFacebookMessenger */
 /* unused harmony export faFacebookSquare */
 /* unused harmony export faFantasyFlightGames */
@@ -2312,7 +2312,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faHtml5 */
 /* unused harmony export faHubspot */
 /* unused harmony export faImdb */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return faInstagram; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faInstagram; });
 /* unused harmony export faIntercom */
 /* unused harmony export faInternetExplorer */
 /* unused harmony export faInvision */
@@ -2459,7 +2459,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faSteamSquare */
 /* unused harmony export faSteamSymbol */
 /* unused harmony export faStickerMule */
-/* unused harmony export faStrava */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return faStrava; });
 /* unused harmony export faStripe */
 /* unused harmony export faStripeS */
 /* unused harmony export faStudiovinari */
@@ -2503,7 +2503,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faVimeoSquare */
 /* unused harmony export faVimeoV */
 /* unused harmony export faVine */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faVk; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return faVk; });
 /* unused harmony export faVnv */
 /* unused harmony export faVuejs */
 /* unused harmony export faWeebly */
@@ -2534,7 +2534,7 @@ var autoReplace = function autoReplace() {
 /* unused harmony export faYelp */
 /* unused harmony export faYoast */
 /* unused harmony export faYoutube */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faYoutubeSquare; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return faYoutubeSquare; });
 /* unused harmony export faZhihu */
 var prefix = "fab";
 var fa500px = {
@@ -5048,7 +5048,7 @@ var _iconsCache = {
 /* unused harmony export faArrowAltCircleLeft */
 /* unused harmony export faArrowAltCircleRight */
 /* unused harmony export faArrowAltCircleUp */
-/* unused harmony export faBell */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return faBell; });
 /* unused harmony export faBellSlash */
 /* unused harmony export faBookmark */
 /* unused harmony export faBuilding */
@@ -5083,10 +5083,10 @@ var _iconsCache = {
 /* unused harmony export faEdit */
 /* unused harmony export faEnvelope */
 /* unused harmony export faEnvelopeOpen */
-/* unused harmony export faEye */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return faEye; });
 /* unused harmony export faEyeSlash */
 /* unused harmony export faFile */
-/* unused harmony export faFileAlt */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faFileAlt; });
 /* unused harmony export faFileArchive */
 /* unused harmony export faFileAudio */
 /* unused harmony export faFileCode */
@@ -5138,7 +5138,7 @@ var _iconsCache = {
 /* unused harmony export faIdBadge */
 /* unused harmony export faIdCard */
 /* unused harmony export faImage */
-/* unused harmony export faImages */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faImages; });
 /* unused harmony export faKeyboard */
 /* unused harmony export faKiss */
 /* unused harmony export faKissBeam */
@@ -5158,14 +5158,14 @@ var _iconsCache = {
 /* unused harmony export faMinusSquare */
 /* unused harmony export faMoneyBillAlt */
 /* unused harmony export faMoon */
-/* unused harmony export faNewspaper */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return faNewspaper; });
 /* unused harmony export faObjectGroup */
 /* unused harmony export faObjectUngroup */
 /* unused harmony export faPaperPlane */
 /* unused harmony export faPauseCircle */
 /* unused harmony export faPlayCircle */
 /* unused harmony export faPlusSquare */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return faQuestionCircle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return faQuestionCircle; });
 /* unused harmony export faRegistered */
 /* unused harmony export faSadCry */
 /* unused harmony export faSadTear */
@@ -5184,12 +5184,12 @@ var _iconsCache = {
 /* unused harmony export faSurprise */
 /* unused harmony export faThumbsDown */
 /* unused harmony export faThumbsUp */
-/* unused harmony export faTimesCircle */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return faTimesCircle; });
 /* unused harmony export faTired */
 /* unused harmony export faTrashAlt */
 /* unused harmony export faUser */
 /* unused harmony export faUserCircle */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return faWindowClose; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return faWindowClose; });
 /* unused harmony export faWindowMaximize */
 /* unused harmony export faWindowMinimize */
 /* unused harmony export faWindowRestore */
@@ -6138,9 +6138,9 @@ var _iconsCache = {
 /* unused harmony export faAngleDoubleRight */
 /* unused harmony export faAngleDoubleUp */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return faAngleDown; });
-/* unused harmony export faAngleLeft */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return faAngleLeft; });
 /* unused harmony export faAngleRight */
-/* unused harmony export faAngleUp */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faAngleUp; });
 /* unused harmony export faAngry */
 /* unused harmony export faAnkh */
 /* unused harmony export faAppleAlt */
@@ -6176,7 +6176,7 @@ var _iconsCache = {
 /* unused harmony export faBan */
 /* unused harmony export faBandAid */
 /* unused harmony export faBarcode */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return faBars; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faBars; });
 /* unused harmony export faBaseballBall */
 /* unused harmony export faBasketballBall */
 /* unused harmony export faBath */
@@ -6231,7 +6231,7 @@ var _iconsCache = {
 /* unused harmony export faCalculator */
 /* unused harmony export faCalendar */
 /* unused harmony export faCalendarAlt */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return faCalendarCheck; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return faCalendarCheck; });
 /* unused harmony export faCalendarDay */
 /* unused harmony export faCalendarMinus */
 /* unused harmony export faCalendarPlus */
@@ -6266,7 +6266,7 @@ var _iconsCache = {
 /* unused harmony export faChalkboard */
 /* unused harmony export faChalkboardTeacher */
 /* unused harmony export faChargingStation */
-/* unused harmony export faChartArea */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return faChartArea; });
 /* unused harmony export faChartBar */
 /* unused harmony export faChartLine */
 /* unused harmony export faChartPie */
@@ -6297,7 +6297,7 @@ var _iconsCache = {
 /* unused harmony export faCity */
 /* unused harmony export faClipboard */
 /* unused harmony export faClipboardCheck */
-/* unused harmony export faClipboardList */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return faClipboardList; });
 /* unused harmony export faClock */
 /* unused harmony export faClone */
 /* unused harmony export faClosedCaptioning */
@@ -6382,7 +6382,7 @@ var _iconsCache = {
 /* unused harmony export faDrum */
 /* unused harmony export faDrumSteelpan */
 /* unused harmony export faDrumstickBite */
-/* unused harmony export faDumbbell */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return faDumbbell; });
 /* unused harmony export faDumpster */
 /* unused harmony export faDumpsterFire */
 /* unused harmony export faDungeon */
@@ -6442,7 +6442,7 @@ var _iconsCache = {
 /* unused harmony export faFill */
 /* unused harmony export faFillDrip */
 /* unused harmony export faFilm */
-/* unused harmony export faFilter */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return faFilter; });
 /* unused harmony export faFingerprint */
 /* unused harmony export faFire */
 /* unused harmony export faFireExtinguisher */
@@ -6607,7 +6607,7 @@ var _iconsCache = {
 /* unused harmony export faLightbulb */
 /* unused harmony export faLink */
 /* unused harmony export faLiraSign */
-/* unused harmony export faList */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return faList; });
 /* unused harmony export faListAlt */
 /* unused harmony export faListOl */
 /* unused harmony export faListUl */
@@ -6684,7 +6684,7 @@ var _iconsCache = {
 /* unused harmony export faOilCan */
 /* unused harmony export faOm */
 /* unused harmony export faOtter */
-/* unused harmony export faOutdent */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return faOutdent; });
 /* unused harmony export faPaintBrush */
 /* unused harmony export faPaintRoller */
 /* unused harmony export faPalette */
@@ -6718,7 +6718,7 @@ var _iconsCache = {
 /* unused harmony export faPhoneVolume */
 /* unused harmony export faPiggyBank */
 /* unused harmony export faPills */
-/* unused harmony export faPlaceOfWorship */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return faPlaceOfWorship; });
 /* unused harmony export faPlane */
 /* unused harmony export faPlaneArrival */
 /* unused harmony export faPlaneDeparture */
@@ -6791,7 +6791,7 @@ var _iconsCache = {
 /* unused harmony export faScrewdriver */
 /* unused harmony export faScroll */
 /* unused harmony export faSdCard */
-/* unused harmony export faSearch */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return faSearch; });
 /* unused harmony export faSearchDollar */
 /* unused harmony export faSearchLocation */
 /* unused harmony export faSearchMinus */
@@ -6842,11 +6842,11 @@ var _iconsCache = {
 /* unused harmony export faSnowplow */
 /* unused harmony export faSocks */
 /* unused harmony export faSolarPanel */
-/* unused harmony export faSort */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return faSort; });
 /* unused harmony export faSortAlphaDown */
 /* unused harmony export faSortAlphaUp */
-/* unused harmony export faSortAmountDown */
-/* unused harmony export faSortAmountUp */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return faSortAmountDown; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return faSortAmountUp; });
 /* unused harmony export faSortDown */
 /* unused harmony export faSortNumericDown */
 /* unused harmony export faSortNumericUp */
@@ -6891,7 +6891,7 @@ var _iconsCache = {
 /* unused harmony export faSwimmer */
 /* unused harmony export faSwimmingPool */
 /* unused harmony export faSynagogue */
-/* unused harmony export faSync */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return faSync; });
 /* unused harmony export faSyncAlt */
 /* unused harmony export faSyringe */
 /* unused harmony export faTable */
@@ -6899,7 +6899,7 @@ var _iconsCache = {
 /* unused harmony export faTablet */
 /* unused harmony export faTabletAlt */
 /* unused harmony export faTablets */
-/* unused harmony export faTachometerAlt */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return faTachometerAlt; });
 /* unused harmony export faTag */
 /* unused harmony export faTags */
 /* unused harmony export faTape */
@@ -6975,7 +6975,7 @@ var _iconsCache = {
 /* unused harmony export faUserAlt */
 /* unused harmony export faUserAltSlash */
 /* unused harmony export faUserAstronaut */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return faUserCheck; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return faUserCheck; });
 /* unused harmony export faUserCircle */
 /* unused harmony export faUserClock */
 /* unused harmony export faUserCog */
@@ -6992,9 +6992,9 @@ var _iconsCache = {
 /* unused harmony export faUserShield */
 /* unused harmony export faUserSlash */
 /* unused harmony export faUserTag */
-/* unused harmony export faUserTie */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return faUserTie; });
 /* unused harmony export faUserTimes */
-/* unused harmony export faUsers */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return faUsers; });
 /* unused harmony export faUsersCog */
 /* unused harmony export faUtensilSpoon */
 /* unused harmony export faUtensils */
@@ -13586,7 +13586,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.news_world_class_fon[data-v-11f02a38] {\n  width: 100%;\n  background-color: #f5f6f6;\n  padding-top: 40px;\n}\n.news_world_class_fon .news_world_class_content[data-v-11f02a38] {\n    margin: auto;\n    padding-bottom: 30px;\n    font-family: \"Avenir Next Cyr W00 Bold\", sans-serif;\n    font-weight: normal;\n    font-size: 16px;\n    line-height: 22px;\n}\n@media (min-width: 85.375em) {\n.news_world_class_fon .news_world_class_content[data-v-11f02a38] {\n        width: 1254px;\n}\n}\n@media (min-width: 64em) and (max-width: 85.375em) {\n.news_world_class_fon .news_world_class_content[data-v-11f02a38] {\n        width: 932px;\n}\n}\n@media (max-width: 64em) and (min-width: 48em) {\n.news_world_class_fon .news_world_class_content[data-v-11f02a38] {\n        width: 730px;\n}\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body[data-v-11f02a38] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      margin: 30px 0 30px 0;\n      padding: 0;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li[data-v-11f02a38] {\n        font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n        list-style-type: none;\n        width: 30%;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li[data-v-11f02a38]:first-child {\n          margin-right: auto;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li[data-v-11f02a38]:last-child {\n          margin-left: auto;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_date[data-v-11f02a38] {\n          color: #b8bbc0;\n          font-size: 14px;\n          margin-bottom: 8px;\n          font-weight: 100;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_text[data-v-11f02a38] {\n          font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n          font-size: 15px;\n          font-style: normal;\n          text-decoration: none;\n          border-bottom: 1px solid transparent;\n          color: black;\n          cursor: pointer;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_text[data-v-11f02a38]:hover {\n            color: #ed1c24;\n            -webkit-transition: all 0.5s;\n            transition: all 0.5s;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_footer .news_world_class_footer_a[data-v-11f02a38] {\n      color: #ed1c24;\n      text-decoration: none;\n      position: relative;\n      border-bottom: 1px solid transparent;\n      cursor: pointer;\n      font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n      font-weight: 100;\n      font-size: 15px;\n      -webkit-transition: all 0.5s;\n      transition: all 0.5s;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_footer .news_world_class_footer_a[data-v-11f02a38]:hover {\n        color: #cb0002;\n        -webkit-transition: all 0.5s;\n        transition: all 0.5s;\n        border-bottom: 1px solid;\n}\n", "", {"version":3,"sources":["/home/fitron/www/dev.worldclass-rostov.ru/20181217111813/resources/js/components/NewsWorldClass.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;EACZ,0BAA0B;EAC1B,kBAAkB;CAAE;AACpB;IACE,aAAa;IACb,qBAAqB;IACrB,oDAAoD;IACpD,oBAAoB;IACpB,gBAAgB;IAChB,kBAAkB;CAAE;AACpB;AACE;QACE,cAAc;CAAE;CAAE;AACtB;AACE;QACE,aAAa;CAAE;CAAE;AACrB;AACE;QACE,aAAa;CAAE;CAAE;AACrB;MACE,qBAAc;MAAd,qBAAc;MAAd,cAAc;MACd,sBAAsB;MACtB,WAAW;CAAE;AACb;QACE,uDAAuD;QACvD,sBAAsB;QACtB,WAAW;CAAE;AACb;UACE,mBAAmB;CAAE;AACvB;UACE,kBAAkB;CAAE;AACtB;UACE,eAAe;UACf,gBAAgB;UAChB,mBAAmB;UACnB,iBAAiB;CAAE;AACrB;UACE,uDAAuD;UACvD,gBAAgB;UAChB,mBAAmB;UACnB,sBAAsB;UACtB,qCAAqC;UACrC,aAAa;UACb,gBAAgB;CAAE;AAClB;YACE,eAAe;YACf,6BAAqB;YAArB,qBAAqB;CAAE;AAC/B;MACE,eAAe;MACf,sBAAsB;MACtB,mBAAmB;MACnB,qCAAqC;MACrC,gBAAgB;MAChB,uDAAuD;MACvD,iBAAiB;MACjB,gBAAgB;MAChB,6BAAqB;MAArB,qBAAqB;CAAE;AACvB;QACE,eAAe;QACf,6BAAqB;QAArB,qBAAqB;QACrB,yBAAyB;CAAE","file":"NewsWorldClass.vue","sourcesContent":[".news_world_class_fon {\n  width: 100%;\n  background-color: #f5f6f6;\n  padding-top: 40px; }\n  .news_world_class_fon .news_world_class_content {\n    margin: auto;\n    padding-bottom: 30px;\n    font-family: \"Avenir Next Cyr W00 Bold\", sans-serif;\n    font-weight: normal;\n    font-size: 16px;\n    line-height: 22px; }\n    @media (min-width: 85.375em) {\n      .news_world_class_fon .news_world_class_content {\n        width: 1254px; } }\n    @media (min-width: 64em) and (max-width: 85.375em) {\n      .news_world_class_fon .news_world_class_content {\n        width: 932px; } }\n    @media (max-width: 64em) and (min-width: 48em) {\n      .news_world_class_fon .news_world_class_content {\n        width: 730px; } }\n    .news_world_class_fon .news_world_class_content .news_world_class_body {\n      display: flex;\n      margin: 30px 0 30px 0;\n      padding: 0; }\n      .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li {\n        font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n        list-style-type: none;\n        width: 30%; }\n        .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li:first-child {\n          margin-right: auto; }\n        .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li:last-child {\n          margin-left: auto; }\n        .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_date {\n          color: #b8bbc0;\n          font-size: 14px;\n          margin-bottom: 8px;\n          font-weight: 100; }\n        .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_text {\n          font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n          font-size: 15px;\n          font-style: normal;\n          text-decoration: none;\n          border-bottom: 1px solid transparent;\n          color: black;\n          cursor: pointer; }\n          .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_text:hover {\n            color: #ed1c24;\n            transition: all 0.5s; }\n    .news_world_class_fon .news_world_class_content .news_world_class_footer .news_world_class_footer_a {\n      color: #ed1c24;\n      text-decoration: none;\n      position: relative;\n      border-bottom: 1px solid transparent;\n      cursor: pointer;\n      font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n      font-weight: 100;\n      font-size: 15px;\n      transition: all 0.5s; }\n      .news_world_class_fon .news_world_class_content .news_world_class_footer .news_world_class_footer_a:hover {\n        color: #cb0002;\n        transition: all 0.5s;\n        border-bottom: 1px solid; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.news_world_class_fon[data-v-11f02a38] {\n  width: 100%;\n  background-color: #f5f6f6;\n  padding-top: 40px;\n}\n.news_world_class_fon .news_world_class_content[data-v-11f02a38] {\n    margin: auto;\n    padding-bottom: 30px;\n    font-family: \"Avenir Next Cyr W00 Bold\", sans-serif;\n    font-weight: normal;\n    font-size: 16px;\n    line-height: 22px;\n}\n@media (min-width: 85.375em) {\n.news_world_class_fon .news_world_class_content[data-v-11f02a38] {\n        width: 1254px;\n}\n}\n@media (min-width: 64em) and (max-width: 85.375em) {\n.news_world_class_fon .news_world_class_content[data-v-11f02a38] {\n        width: 932px;\n}\n}\n@media (max-width: 64em) and (min-width: 48em) {\n.news_world_class_fon .news_world_class_content[data-v-11f02a38] {\n        width: 730px;\n}\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body[data-v-11f02a38] {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      margin: 30px 0 30px 0;\n      padding: 0;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li[data-v-11f02a38] {\n        font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n        list-style-type: none;\n        width: 30%;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li[data-v-11f02a38]:first-child {\n          margin-right: auto;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li[data-v-11f02a38]:last-child {\n          margin-left: auto;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_date[data-v-11f02a38] {\n          color: #b8bbc0;\n          font-size: 14px;\n          margin-bottom: 8px;\n          font-weight: 100;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_text[data-v-11f02a38] {\n          font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n          font-size: 15px;\n          font-style: normal;\n          text-decoration: none;\n          border-bottom: 1px solid transparent;\n          color: black;\n          cursor: pointer;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_text[data-v-11f02a38]:hover {\n            color: #ed1c24;\n            -webkit-transition: all 0.5s;\n            transition: all 0.5s;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_footer .news_world_class_footer_a[data-v-11f02a38] {\n      color: #ed1c24;\n      text-decoration: none;\n      position: relative;\n      border-bottom: 1px solid transparent;\n      cursor: pointer;\n      font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n      font-weight: 100;\n      font-size: 15px;\n      -webkit-transition: all 0.5s;\n      transition: all 0.5s;\n}\n.news_world_class_fon .news_world_class_content .news_world_class_footer .news_world_class_footer_a[data-v-11f02a38]:hover {\n        color: #cb0002;\n        -webkit-transition: all 0.5s;\n        transition: all 0.5s;\n        border-bottom: 1px solid;\n}\n", "", {"version":3,"sources":["/home/fitron/www/dev.worldclass-rostov.ru/20181220100930/resources/js/components/NewsWorldClass.vue"],"names":[],"mappings":";AAAA;EACE,YAAY;EACZ,0BAA0B;EAC1B,kBAAkB;CAAE;AACpB;IACE,aAAa;IACb,qBAAqB;IACrB,oDAAoD;IACpD,oBAAoB;IACpB,gBAAgB;IAChB,kBAAkB;CAAE;AACpB;AACE;QACE,cAAc;CAAE;CAAE;AACtB;AACE;QACE,aAAa;CAAE;CAAE;AACrB;AACE;QACE,aAAa;CAAE;CAAE;AACrB;MACE,qBAAc;MAAd,qBAAc;MAAd,cAAc;MACd,sBAAsB;MACtB,WAAW;CAAE;AACb;QACE,uDAAuD;QACvD,sBAAsB;QACtB,WAAW;CAAE;AACb;UACE,mBAAmB;CAAE;AACvB;UACE,kBAAkB;CAAE;AACtB;UACE,eAAe;UACf,gBAAgB;UAChB,mBAAmB;UACnB,iBAAiB;CAAE;AACrB;UACE,uDAAuD;UACvD,gBAAgB;UAChB,mBAAmB;UACnB,sBAAsB;UACtB,qCAAqC;UACrC,aAAa;UACb,gBAAgB;CAAE;AAClB;YACE,eAAe;YACf,6BAAqB;YAArB,qBAAqB;CAAE;AAC/B;MACE,eAAe;MACf,sBAAsB;MACtB,mBAAmB;MACnB,qCAAqC;MACrC,gBAAgB;MAChB,uDAAuD;MACvD,iBAAiB;MACjB,gBAAgB;MAChB,6BAAqB;MAArB,qBAAqB;CAAE;AACvB;QACE,eAAe;QACf,6BAAqB;QAArB,qBAAqB;QACrB,yBAAyB;CAAE","file":"NewsWorldClass.vue","sourcesContent":[".news_world_class_fon {\n  width: 100%;\n  background-color: #f5f6f6;\n  padding-top: 40px; }\n  .news_world_class_fon .news_world_class_content {\n    margin: auto;\n    padding-bottom: 30px;\n    font-family: \"Avenir Next Cyr W00 Bold\", sans-serif;\n    font-weight: normal;\n    font-size: 16px;\n    line-height: 22px; }\n    @media (min-width: 85.375em) {\n      .news_world_class_fon .news_world_class_content {\n        width: 1254px; } }\n    @media (min-width: 64em) and (max-width: 85.375em) {\n      .news_world_class_fon .news_world_class_content {\n        width: 932px; } }\n    @media (max-width: 64em) and (min-width: 48em) {\n      .news_world_class_fon .news_world_class_content {\n        width: 730px; } }\n    .news_world_class_fon .news_world_class_content .news_world_class_body {\n      display: flex;\n      margin: 30px 0 30px 0;\n      padding: 0; }\n      .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li {\n        font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n        list-style-type: none;\n        width: 30%; }\n        .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li:first-child {\n          margin-right: auto; }\n        .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li:last-child {\n          margin-left: auto; }\n        .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_date {\n          color: #b8bbc0;\n          font-size: 14px;\n          margin-bottom: 8px;\n          font-weight: 100; }\n        .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_text {\n          font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n          font-size: 15px;\n          font-style: normal;\n          text-decoration: none;\n          border-bottom: 1px solid transparent;\n          color: black;\n          cursor: pointer; }\n          .news_world_class_fon .news_world_class_content .news_world_class_body .news_world_class_body_li .news_world_class_body_li_text:hover {\n            color: #ed1c24;\n            transition: all 0.5s; }\n    .news_world_class_fon .news_world_class_content .news_world_class_footer .news_world_class_footer_a {\n      color: #ed1c24;\n      text-decoration: none;\n      position: relative;\n      border-bottom: 1px solid transparent;\n      cursor: pointer;\n      font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n      font-weight: 100;\n      font-size: 15px;\n      transition: all 0.5s; }\n      .news_world_class_fon .news_world_class_content .news_world_class_footer .news_world_class_footer_a:hover {\n        color: #cb0002;\n        transition: all 0.5s;\n        border-bottom: 1px solid; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -13601,7 +13601,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.slider[data-v-353948ca] {\n        position: relative;\n        z-index: 1;\n        overflow: hidden;\n        height: 100vh;\n}\n.slider ul[data-v-353948ca] {\n        list-style: none;\n}\n.slider ul.slides[data-v-353948ca] {\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        -webkit-transition: top 800ms;\n        transition: top 800ms;\n}\n.slider ul.slides li[data-v-353948ca] {\n        height: 100%;\n}\n.slider ul.slides li .img[data-v-353948ca] {\n        height: 100%;\n        background-size: cover;\n        background-position: 50%;\n}\n.slider ul.slides li .img .text[data-v-353948ca] {\n        padding: 7% 12%;\n        font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n        font-weight: 100;\n}\n.slider ul.slides li .img .text .head[data-v-353948ca] {\n        font-size: 48px;\n        line-height: 60px;\n        margin-bottom: 25px;\n        color: #fff;\n}\n.slider ul.slides li .img .text .mark[data-v-353948ca] {\n        font-size: 16px;\n        line-height: 26px;\n        color: #fff;\n}\n.slider ul.indicators[data-v-353948ca] {\n        position: absolute;\n        padding-right: 40px;\n        right: 0;\n        top: 50%;\n        -webkit-transform: translateY(-50%);\n                transform: translateY(-50%);\n        z-index: 2;\n        text-align: right;\n}\n.slider ul.indicators li[data-v-353948ca] {\n        clear: both;\n}\n.slider ul.indicators li .item[data-v-353948ca] {\n        position: relative;\n        margin-bottom: 16px;\n        float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-353948ca] {\n        margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-353948ca] {\n        color: #fff;\n        cursor: pointer;\n        font-size: 16px;\n        font-family: 'SegoeUI-Bold';\n        -webkit-transition: font-size 0.6s ease-out;\n        transition: font-size 0.6s ease-out;\n}\n.slider ul.indicators li .mark[data-v-353948ca] {\n        color: #fff;\n        font-family: 'SegoeUI-Semilight';\n        display: none;\n        opacity: 0;\n        -webkit-transition: all 0.6s ease-out;\n        transition: all 0.6s ease-out;\n}\n.slider ul.indicators li.active .mark[data-v-353948ca] {\n        color: #fff;\n        font-family: 'SegoeUI-Semilight';\n        display: block;\n        text-align: left;\n        opacity: 1;\n        -webkit-transition: all 0.6s ease-out;\n        transition: all 0.6s ease-out;\n}\n.slider ul.indicators li .dot[data-v-353948ca] {\n        position: absolute;\n        top: 50%;\n        right: -20px;\n        margin-top: -5.5px;\n        margin-left: 10px;\n        width: 11px;\n        height: 11px;\n        background: #fff;\n        border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-353948ca] {\n        position: relative;\n        display: inline-block;\n        width: 100%;\n        height: 2px;\n        margin: 8px 0;\n        background: rgba(255,255,255,0.5);\n}\n.slider ul.indicators li.active .title[data-v-353948ca] {\n        -webkit-transition: font-size 0.6s ease-in;\n        transition: font-size 0.6s ease-in;\n        font-size: 36px;\n        font-family: 'SegoeUI-Light';\n}\n.slider ul.indicators li.active .progress .fill[data-v-353948ca] {\n        height: 100%;\n        background: #fff;\n}\n", "", {"version":3,"sources":["/home/fitron/www/dev.worldclass-rostov.ru/20181217111813/resources/js/components/resources/js/components/PromoSliderWorldClass.vue"],"names":[],"mappings":";AAgHA;QACA,mBAAA;QACA,WAAA;QACA,iBAAA;QACA,cAAA;CACA;AACA;QACA,iBAAA;CACA;AACA;QACA,mBAAA;QACA,YAAA;QACA,aAAA;QACA,UAAA;QACA,WAAA;QACA,8BAAA;QAAA,sBAAA;CACA;AACA;QACA,aAAA;CACA;AACA;QACA,aAAA;QACA,uBAAA;QACA,yBAAA;CACA;AACA;QACA,gBAAA;QACA,uDAAA;QACA,iBAAA;CACA;AACA;QACA,gBAAA;QACA,kBAAA;QACA,oBAAA;QACA,YAAA;CACA;AACA;QACA,gBAAA;QACA,kBAAA;QACA,YAAA;CACA;AACA;QACA,mBAAA;QACA,oBAAA;QACA,SAAA;QACA,SAAA;QACA,oCAAA;gBAAA,4BAAA;QACA,WAAA;QACA,kBAAA;CACA;AACA;QACA,YAAA;CACA;AACA;QACA,mBAAA;QACA,oBAAA;QACA,aAAA;CACA;AACA;QACA,iBAAA;CACA;AACA;QACA,YAAA;QACA,gBAAA;QACA,gBAAA;QACA,4BAAA;QACA,4CAAA;QAAA,oCAAA;CACA;AACA;QACA,YAAA;QACA,iCAAA;QACA,cAAA;QACA,WAAA;QACA,sCAAA;QAAA,8BAAA;CACA;AACA;QACA,YAAA;QACA,iCAAA;QACA,eAAA;QACA,iBAAA;QACA,WAAA;QACA,sCAAA;QAAA,8BAAA;CACA;AACA;QACA,mBAAA;QACA,SAAA;QACA,aAAA;QACA,mBAAA;QACA,kBAAA;QACA,YAAA;QACA,aAAA;QACA,iBAAA;QACA,mBAAA;CACA;AACA;QACA,mBAAA;QACA,sBAAA;QACA,YAAA;QACA,YAAA;QACA,cAAA;QACA,kCAAA;CACA;AACA;QACA,2CAAA;QAAA,mCAAA;QACA,gBAAA;QACA,6BAAA;CACA;AACA;QACA,aAAA;QACA,iBAAA;CACA","file":"PromoSliderWorldClass.vue","sourcesContent":["<template>\n    <div class=\"slider\">\n        <ul class=\"slides\" :style=\"style\">\n            <li v-for=\"(slide,i) in playslides\" :key=\"i\">\n                <div class=\"img\" :style=\"{ backgroundImage: `url(${slide.img})` }\">\n                    <div class=\"text\">\n                    <div class=\"head\" v-html=\"slide.head\"></div>\n                    <div class=\"mark\" v-html=\"slide.mark\"></div>\n                    </div>\n                </div>\n            </li>\n        </ul>\n        <ul class=\"indicators\">\n            <li v-for=\"(slide,i) in slides\" :key=\"i\" @click=\"selectSlide(i)\" :class=\"i==current ? 'active' : null\">\n                <div class=\"item\">\n                    <span class=\"title\">{{slide.title}}</span>\n                    <!--<div class=\"mark\" v-html=\"slide.mark\"></div>-->\n                    <span class=\"progress\">\n                        <div class=\"fill\" :style=\"{ width: `${percent}%`}\"></div>\n                        <div class=\"dot\"></div>\n                    </span>\n                </div>\n            </li>\n        </ul>\n    </div>\n</template>\n\n<script>\n    export default {\n        name: \"PromoSliderWorldClass\",\n        data: () => ({\n            slides: [{\n                img: \"/files/feature/page_classgrit.jpg\",\n                title: \"Фитнес-программы\",\n                head: \"Разнообразие фитнес-<br />программ\",\n                mark: \"World Class предлагает более 55 фитнес-программ:<br />- кроссфит,<br />- боевые искусства,<br />- аквааэробика,<br />- йога и пилатес,<br />- танцевальные направления.<br />- детский фитнес.\"\n            }, {\n                img: \"/files/feature/page_2.jpg\",\n                title: \"Высокотехнологичное оборудование\",\n                head: \"Новейшее оборудование<br /> от лидеров отрасли\",\n                mark: \"В кардиозоне клуба представлен 31 тренажер 8-и видов от<br />мирового лидера Life Fitness с экранами диогональю 43,8 см,<br />прямым выходом в Интернет,визуальными маршрутами Life<br />Scape,50 ТВ-каналами, подключением к мобильным устройствам.<br/>Оборудование регулярно обновляется и пополняется.<br />Имеется зона свободных весов.\"\n            }, {\n                img: \"/files/feature/page_3.jpg\",\n                title: \"Персональный тренинг\",\n                head: \"Персональная тренировка<br />- самый быстрый путь к<br />совершенной форме\",\n                mark: \"Персональный тренер поможет вам составить программу<br />тренировок и питания, научит правильной технике<br />выполнения упражнений.\"\n            }, {\n                img: \"/files/feature/page_456.jpg\",\n                title: \"Клуб для лидеров\",\n                head: \"Клуб для лидеров\",\n                mark: \"Комфорт от WorldClass-это:<br />- многоступенчатая очистка воздуха и воды;<br />- специальные уникальные покрытия в студиях,бассейне,<br />душевых;<br />- оргинальный дизайн, комфорт и новейшее оборудование.\"\n            }],\n            current: 0,\n            percent: 0,\n            timer: 0,\n            interval: 0,\n            progress: 0,\n            duration: 5000,\n            playslides: []\n        }),\n        computed: {\n            style: function style() {\n                switch (this.current % 2) {\n                    case 0:\n                        return { top: \"0\" };\n                    case 1:\n                        return { top: \"-100%\" };\n                }\n            }\n        },\n        methods: {\n            selectSlide: function selectSlide(i) {\n                this.current = i;\n                this.playslides[this.current % 2] = this.slides[this.current];\n                this.resetPlay();\n            },\n            process: function process() {\n                this.current++;\n                if (this.current >= this.slides.length) {\n                    this.current = 0;\n                }\n                this.playslides[this.current % 2] = this.slides[this.current];\n                this.resetPlay();\n            },\n            going: function going() {\n                var time = new Date().getTime();\n                this.percent = Math.floor(100 * (time - this.timer) / this.duration);\n            },\n            resetPlay: function resetPlay() {\n                clearInterval(this.interval);\n                clearInterval(this.progress);\n//                this.play();\n            },\n            stop: function stop() {\n                clearInterval(this.interval);\n                clearInterval(this.progress);\n            },\n            play: function play() {\n                this.timer = new Date().getTime();\n                this.progress = setInterval(this.going, this.duration / 100);\n                this.interval = setInterval(this.process, this.duration);\n            }\n        },\n        created: function created() {\n            this.playslides[0] = this.slides[0];\n            this.playslides[1] = this.slides[1];\n            this.play();\n        }\n    }\n</script>\n\n<style scoped>\n    .slider {\n        position: relative;\n        z-index: 1;\n        overflow: hidden;\n        height: 100vh;\n    }\n    .slider ul {\n        list-style: none;\n    }\n    .slider ul.slides {\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        transition: top 800ms;\n    }\n    .slider ul.slides li {\n        height: 100%;\n    }\n    .slider ul.slides li .img {\n        height: 100%;\n        background-size: cover;\n        background-position: 50%;\n    }\n    .slider ul.slides li .img .text {\n        padding: 7% 12%;\n        font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n        font-weight: 100;\n    }\n    .slider ul.slides li .img .text .head {\n        font-size: 48px;\n        line-height: 60px;\n        margin-bottom: 25px;\n        color: #fff;\n    }\n    .slider ul.slides li .img .text .mark {\n        font-size: 16px;\n        line-height: 26px;\n        color: #fff;\n    }\n    .slider ul.indicators {\n        position: absolute;\n        padding-right: 40px;\n        right: 0;\n        top: 50%;\n        transform: translateY(-50%);\n        z-index: 2;\n        text-align: right;\n    }\n    .slider ul.indicators li {\n        clear: both;\n    }\n    .slider ul.indicators li .item {\n        position: relative;\n        margin-bottom: 16px;\n        float: right;\n    }\n    .slider ul.indicators li:last-child .item {\n        margin-bottom: 0;\n    }\n    .slider ul.indicators li .title {\n        color: #fff;\n        cursor: pointer;\n        font-size: 16px;\n        font-family: 'SegoeUI-Bold';\n        transition: font-size 0.6s ease-out;\n    }\n    .slider ul.indicators li .mark {\n        color: #fff;\n        font-family: 'SegoeUI-Semilight';\n        display: none;\n        opacity: 0;\n        transition: all 0.6s ease-out;\n    }\n    .slider ul.indicators li.active .mark {\n        color: #fff;\n        font-family: 'SegoeUI-Semilight';\n        display: block;\n        text-align: left;\n        opacity: 1;\n        transition: all 0.6s ease-out;\n    }\n    .slider ul.indicators li .dot {\n        position: absolute;\n        top: 50%;\n        right: -20px;\n        margin-top: -5.5px;\n        margin-left: 10px;\n        width: 11px;\n        height: 11px;\n        background: #fff;\n        border-radius: 50%;\n    }\n    .slider ul.indicators li .progress {\n        position: relative;\n        display: inline-block;\n        width: 100%;\n        height: 2px;\n        margin: 8px 0;\n        background: rgba(255,255,255,0.5);\n    }\n    .slider ul.indicators li.active .title {\n        transition: font-size 0.6s ease-in;\n        font-size: 36px;\n        font-family: 'SegoeUI-Light';\n    }\n    .slider ul.indicators li.active .progress .fill {\n        height: 100%;\n        background: #fff;\n    }\n</style>\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.slider[data-v-353948ca] {\n        position: relative;\n        z-index: 1;\n        overflow: hidden;\n        height: 100vh;\n}\n.slider ul[data-v-353948ca] {\n        list-style: none;\n}\n.slider ul.slides[data-v-353948ca] {\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        -webkit-transition: top 800ms;\n        transition: top 800ms;\n}\n.slider ul.slides li[data-v-353948ca] {\n        height: 100%;\n}\n.slider ul.slides li .img[data-v-353948ca] {\n        height: 100%;\n        background-size: cover;\n        background-position: 50%;\n}\n.slider ul.slides li .img .text[data-v-353948ca] {\n        padding: 7% 12%;\n        font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n        font-weight: 100;\n}\n.slider ul.slides li .img .text .head[data-v-353948ca] {\n        font-size: 48px;\n        line-height: 60px;\n        margin-bottom: 25px;\n        color: #fff;\n}\n.slider ul.slides li .img .text .mark[data-v-353948ca] {\n        font-size: 16px;\n        line-height: 26px;\n        color: #fff;\n}\n.slider ul.indicators[data-v-353948ca] {\n        position: absolute;\n        padding-right: 40px;\n        right: 0;\n        top: 50%;\n        -webkit-transform: translateY(-50%);\n                transform: translateY(-50%);\n        z-index: 2;\n        text-align: right;\n}\n.slider ul.indicators li[data-v-353948ca] {\n        clear: both;\n}\n.slider ul.indicators li .item[data-v-353948ca] {\n        position: relative;\n        margin-bottom: 16px;\n        float: right;\n}\n.slider ul.indicators li:last-child .item[data-v-353948ca] {\n        margin-bottom: 0;\n}\n.slider ul.indicators li .title[data-v-353948ca] {\n        color: #fff;\n        cursor: pointer;\n        font-size: 16px;\n        font-family: 'SegoeUI-Bold';\n        -webkit-transition: font-size 0.6s ease-out;\n        transition: font-size 0.6s ease-out;\n}\n.slider ul.indicators li .mark[data-v-353948ca] {\n        color: #fff;\n        font-family: 'SegoeUI-Semilight';\n        display: none;\n        opacity: 0;\n        -webkit-transition: all 0.6s ease-out;\n        transition: all 0.6s ease-out;\n}\n.slider ul.indicators li.active .mark[data-v-353948ca] {\n        color: #fff;\n        font-family: 'SegoeUI-Semilight';\n        display: block;\n        text-align: left;\n        opacity: 1;\n        -webkit-transition: all 0.6s ease-out;\n        transition: all 0.6s ease-out;\n}\n.slider ul.indicators li .dot[data-v-353948ca] {\n        position: absolute;\n        top: 50%;\n        right: -20px;\n        margin-top: -5.5px;\n        margin-left: 10px;\n        width: 11px;\n        height: 11px;\n        background: #fff;\n        border-radius: 50%;\n}\n.slider ul.indicators li .progress[data-v-353948ca] {\n        position: relative;\n        display: inline-block;\n        width: 100%;\n        height: 2px;\n        margin: 8px 0;\n        background: rgba(255,255,255,0.5);\n}\n.slider ul.indicators li.active .title[data-v-353948ca] {\n        -webkit-transition: font-size 0.6s ease-in;\n        transition: font-size 0.6s ease-in;\n        font-size: 36px;\n        font-family: 'SegoeUI-Light';\n}\n.slider ul.indicators li.active .progress .fill[data-v-353948ca] {\n        height: 100%;\n        background: #fff;\n}\n", "", {"version":3,"sources":["/home/fitron/www/dev.worldclass-rostov.ru/20181220100930/resources/js/components/resources/js/components/PromoSliderWorldClass.vue"],"names":[],"mappings":";AAgHA;QACA,mBAAA;QACA,WAAA;QACA,iBAAA;QACA,cAAA;CACA;AACA;QACA,iBAAA;CACA;AACA;QACA,mBAAA;QACA,YAAA;QACA,aAAA;QACA,UAAA;QACA,WAAA;QACA,8BAAA;QAAA,sBAAA;CACA;AACA;QACA,aAAA;CACA;AACA;QACA,aAAA;QACA,uBAAA;QACA,yBAAA;CACA;AACA;QACA,gBAAA;QACA,uDAAA;QACA,iBAAA;CACA;AACA;QACA,gBAAA;QACA,kBAAA;QACA,oBAAA;QACA,YAAA;CACA;AACA;QACA,gBAAA;QACA,kBAAA;QACA,YAAA;CACA;AACA;QACA,mBAAA;QACA,oBAAA;QACA,SAAA;QACA,SAAA;QACA,oCAAA;gBAAA,4BAAA;QACA,WAAA;QACA,kBAAA;CACA;AACA;QACA,YAAA;CACA;AACA;QACA,mBAAA;QACA,oBAAA;QACA,aAAA;CACA;AACA;QACA,iBAAA;CACA;AACA;QACA,YAAA;QACA,gBAAA;QACA,gBAAA;QACA,4BAAA;QACA,4CAAA;QAAA,oCAAA;CACA;AACA;QACA,YAAA;QACA,iCAAA;QACA,cAAA;QACA,WAAA;QACA,sCAAA;QAAA,8BAAA;CACA;AACA;QACA,YAAA;QACA,iCAAA;QACA,eAAA;QACA,iBAAA;QACA,WAAA;QACA,sCAAA;QAAA,8BAAA;CACA;AACA;QACA,mBAAA;QACA,SAAA;QACA,aAAA;QACA,mBAAA;QACA,kBAAA;QACA,YAAA;QACA,aAAA;QACA,iBAAA;QACA,mBAAA;CACA;AACA;QACA,mBAAA;QACA,sBAAA;QACA,YAAA;QACA,YAAA;QACA,cAAA;QACA,kCAAA;CACA;AACA;QACA,2CAAA;QAAA,mCAAA;QACA,gBAAA;QACA,6BAAA;CACA;AACA;QACA,aAAA;QACA,iBAAA;CACA","file":"PromoSliderWorldClass.vue","sourcesContent":["<template>\n    <div class=\"slider\">\n        <ul class=\"slides\" :style=\"style\">\n            <li v-for=\"(slide,i) in playslides\" :key=\"i\">\n                <div class=\"img\" :style=\"{ backgroundImage: `url(${slide.img})` }\">\n                    <div class=\"text\">\n                    <div class=\"head\" v-html=\"slide.head\"></div>\n                    <div class=\"mark\" v-html=\"slide.mark\"></div>\n                    </div>\n                </div>\n            </li>\n        </ul>\n        <ul class=\"indicators\">\n            <li v-for=\"(slide,i) in slides\" :key=\"i\" @click=\"selectSlide(i)\" :class=\"i==current ? 'active' : null\">\n                <div class=\"item\">\n                    <span class=\"title\">{{slide.title}}</span>\n                    <!--<div class=\"mark\" v-html=\"slide.mark\"></div>-->\n                    <span class=\"progress\">\n                        <div class=\"fill\" :style=\"{ width: `${percent}%`}\"></div>\n                        <div class=\"dot\"></div>\n                    </span>\n                </div>\n            </li>\n        </ul>\n    </div>\n</template>\n\n<script>\n    export default {\n        name: \"PromoSliderWorldClass\",\n        data: () => ({\n            slides: [{\n                img: \"/files/feature/page_classgrit.jpg\",\n                title: \"Фитнес-программы\",\n                head: \"Разнообразие фитнес-<br />программ\",\n                mark: \"World Class предлагает более 55 фитнес-программ:<br />- кроссфит,<br />- боевые искусства,<br />- аквааэробика,<br />- йога и пилатес,<br />- танцевальные направления.<br />- детский фитнес.\"\n            }, {\n                img: \"/files/feature/page_2.jpg\",\n                title: \"Высокотехнологичное оборудование\",\n                head: \"Новейшее оборудование<br /> от лидеров отрасли\",\n                mark: \"В кардиозоне клуба представлен 31 тренажер 8-и видов от<br />мирового лидера Life Fitness с экранами диогональю 43,8 см,<br />прямым выходом в Интернет,визуальными маршрутами Life<br />Scape,50 ТВ-каналами, подключением к мобильным устройствам.<br/>Оборудование регулярно обновляется и пополняется.<br />Имеется зона свободных весов.\"\n            }, {\n                img: \"/files/feature/page_3.jpg\",\n                title: \"Персональный тренинг\",\n                head: \"Персональная тренировка<br />- самый быстрый путь к<br />совершенной форме\",\n                mark: \"Персональный тренер поможет вам составить программу<br />тренировок и питания, научит правильной технике<br />выполнения упражнений.\"\n            }, {\n                img: \"/files/feature/page_456.jpg\",\n                title: \"Клуб для лидеров\",\n                head: \"Клуб для лидеров\",\n                mark: \"Комфорт от WorldClass-это:<br />- многоступенчатая очистка воздуха и воды;<br />- специальные уникальные покрытия в студиях,бассейне,<br />душевых;<br />- оргинальный дизайн, комфорт и новейшее оборудование.\"\n            }],\n            current: 0,\n            percent: 0,\n            timer: 0,\n            interval: 0,\n            progress: 0,\n            duration: 5000,\n            playslides: []\n        }),\n        computed: {\n            style: function style() {\n                switch (this.current % 2) {\n                    case 0:\n                        return { top: \"0\" };\n                    case 1:\n                        return { top: \"-100%\" };\n                }\n            }\n        },\n        methods: {\n            selectSlide: function selectSlide(i) {\n                this.current = i;\n                this.playslides[this.current % 2] = this.slides[this.current];\n                this.resetPlay();\n            },\n            process: function process() {\n                this.current++;\n                if (this.current >= this.slides.length) {\n                    this.current = 0;\n                }\n                this.playslides[this.current % 2] = this.slides[this.current];\n                this.resetPlay();\n            },\n            going: function going() {\n                var time = new Date().getTime();\n                this.percent = Math.floor(100 * (time - this.timer) / this.duration);\n            },\n            resetPlay: function resetPlay() {\n                clearInterval(this.interval);\n                clearInterval(this.progress);\n//                this.play();\n            },\n            stop: function stop() {\n                clearInterval(this.interval);\n                clearInterval(this.progress);\n            },\n            play: function play() {\n                this.timer = new Date().getTime();\n                this.progress = setInterval(this.going, this.duration / 100);\n                this.interval = setInterval(this.process, this.duration);\n            }\n        },\n        created: function created() {\n            this.playslides[0] = this.slides[0];\n            this.playslides[1] = this.slides[1];\n            this.play();\n        }\n    }\n</script>\n\n<style scoped>\n    .slider {\n        position: relative;\n        z-index: 1;\n        overflow: hidden;\n        height: 100vh;\n    }\n    .slider ul {\n        list-style: none;\n    }\n    .slider ul.slides {\n        position: absolute;\n        width: 100%;\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        transition: top 800ms;\n    }\n    .slider ul.slides li {\n        height: 100%;\n    }\n    .slider ul.slides li .img {\n        height: 100%;\n        background-size: cover;\n        background-position: 50%;\n    }\n    .slider ul.slides li .img .text {\n        padding: 7% 12%;\n        font-family: \"Avenir Next Cyr W00 Regular\", sans-serif;\n        font-weight: 100;\n    }\n    .slider ul.slides li .img .text .head {\n        font-size: 48px;\n        line-height: 60px;\n        margin-bottom: 25px;\n        color: #fff;\n    }\n    .slider ul.slides li .img .text .mark {\n        font-size: 16px;\n        line-height: 26px;\n        color: #fff;\n    }\n    .slider ul.indicators {\n        position: absolute;\n        padding-right: 40px;\n        right: 0;\n        top: 50%;\n        transform: translateY(-50%);\n        z-index: 2;\n        text-align: right;\n    }\n    .slider ul.indicators li {\n        clear: both;\n    }\n    .slider ul.indicators li .item {\n        position: relative;\n        margin-bottom: 16px;\n        float: right;\n    }\n    .slider ul.indicators li:last-child .item {\n        margin-bottom: 0;\n    }\n    .slider ul.indicators li .title {\n        color: #fff;\n        cursor: pointer;\n        font-size: 16px;\n        font-family: 'SegoeUI-Bold';\n        transition: font-size 0.6s ease-out;\n    }\n    .slider ul.indicators li .mark {\n        color: #fff;\n        font-family: 'SegoeUI-Semilight';\n        display: none;\n        opacity: 0;\n        transition: all 0.6s ease-out;\n    }\n    .slider ul.indicators li.active .mark {\n        color: #fff;\n        font-family: 'SegoeUI-Semilight';\n        display: block;\n        text-align: left;\n        opacity: 1;\n        transition: all 0.6s ease-out;\n    }\n    .slider ul.indicators li .dot {\n        position: absolute;\n        top: 50%;\n        right: -20px;\n        margin-top: -5.5px;\n        margin-left: 10px;\n        width: 11px;\n        height: 11px;\n        background: #fff;\n        border-radius: 50%;\n    }\n    .slider ul.indicators li .progress {\n        position: relative;\n        display: inline-block;\n        width: 100%;\n        height: 2px;\n        margin: 8px 0;\n        background: rgba(255,255,255,0.5);\n    }\n    .slider ul.indicators li.active .title {\n        transition: font-size 0.6s ease-in;\n        font-size: 36px;\n        font-family: 'SegoeUI-Light';\n    }\n    .slider ul.indicators li.active .progress .fill {\n        height: 100%;\n        background: #fff;\n    }\n</style>\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -13616,7 +13616,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n.flux-parallax img {\n  position: absolute;\n  visibility: hidden;\n}\n", "", {"version":3,"sources":["/home/fitron/www/dev.worldclass-rostov.ru/20181217111813/resources/js/components/flux/FluxParallax.vue"],"names":[],"mappings":";AAAA;EACE,mBAAmB;EACnB,mBAAmB;CAAE","file":"FluxParallax.vue","sourcesContent":[".flux-parallax img {\n  position: absolute;\n  visibility: hidden; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n.flux-parallax img {\n  position: absolute;\n  visibility: hidden;\n}\n", "", {"version":3,"sources":["/home/fitron/www/dev.worldclass-rostov.ru/20181220100930/resources/js/components/flux/FluxParallax.vue"],"names":[],"mappings":";AAAA;EACE,mBAAmB;EACnB,mBAAmB;CAAE","file":"FluxParallax.vue","sourcesContent":[".flux-parallax img {\n  position: absolute;\n  visibility: hidden; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -13631,7 +13631,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "\n@media (min-width: 85.375em) {\n.carousel-3d-container[data-v-6532b8a0] {\n    width: 1340px;\n}\n}\n@media (min-width: 64em) and (max-width: 85.375em) {\n.carousel-3d-container[data-v-6532b8a0] {\n    width: 985px;\n}\n}\n@media (max-width: 64em) and (min-width: 48em) {\n.carousel-3d-container[data-v-6532b8a0] {\n    width: 730px;\n}\n}\n.carousel-3d-container figure[data-v-6532b8a0] {\n  margin: 0;\n}\n.carousel-3d-container figcaption[data-v-6532b8a0] {\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.5);\n  color: #fff;\n  bottom: 0;\n  position: absolute;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12px;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n", "", {"version":3,"sources":["/home/fitron/www/dev.worldclass-rostov.ru/20181217111813/resources/js/components/ActivityWorldClass.vue"],"names":[],"mappings":";AAAA;AACE;IACE,cAAc;CAAE;CAAE;AAEtB;AACE;IACE,aAAa;CAAE;CAAE;AAErB;AACE;IACE,aAAa;CAAE;CAAE;AAErB;EACE,UAAU;CAAE;AAEd;EACE,mBAAmB;EACnB,qCAAqC;EACrC,YAAY;EACZ,UAAU;EACV,mBAAmB;EACnB,UAAU;EACV,cAAc;EACd,gBAAgB;EAChB,gBAAgB;EAChB,+BAAuB;UAAvB,uBAAuB;CAAE","file":"ActivityWorldClass.vue","sourcesContent":["@media (min-width: 85.375em) {\n  .carousel-3d-container {\n    width: 1340px; } }\n\n@media (min-width: 64em) and (max-width: 85.375em) {\n  .carousel-3d-container {\n    width: 985px; } }\n\n@media (max-width: 64em) and (min-width: 48em) {\n  .carousel-3d-container {\n    width: 730px; } }\n\n.carousel-3d-container figure {\n  margin: 0; }\n\n.carousel-3d-container figcaption {\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.5);\n  color: #fff;\n  bottom: 0;\n  position: absolute;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12px;\n  min-width: 100%;\n  box-sizing: border-box; }\n"],"sourceRoot":""}]);
+exports.push([module.i, "\n@media (min-width: 85.375em) {\n.carousel-3d-container[data-v-6532b8a0] {\n    width: 1340px;\n}\n}\n@media (min-width: 64em) and (max-width: 85.375em) {\n.carousel-3d-container[data-v-6532b8a0] {\n    width: 985px;\n}\n}\n@media (max-width: 64em) and (min-width: 48em) {\n.carousel-3d-container[data-v-6532b8a0] {\n    width: 730px;\n}\n}\n.carousel-3d-container figure[data-v-6532b8a0] {\n  margin: 0;\n}\n.carousel-3d-container figcaption[data-v-6532b8a0] {\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.5);\n  color: #fff;\n  bottom: 0;\n  position: absolute;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12px;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n", "", {"version":3,"sources":["/home/fitron/www/dev.worldclass-rostov.ru/20181220100930/resources/js/components/ActivityWorldClass.vue"],"names":[],"mappings":";AAAA;AACE;IACE,cAAc;CAAE;CAAE;AAEtB;AACE;IACE,aAAa;CAAE;CAAE;AAErB;AACE;IACE,aAAa;CAAE;CAAE;AAErB;EACE,UAAU;CAAE;AAEd;EACE,mBAAmB;EACnB,qCAAqC;EACrC,YAAY;EACZ,UAAU;EACV,mBAAmB;EACnB,UAAU;EACV,cAAc;EACd,gBAAgB;EAChB,gBAAgB;EAChB,+BAAuB;UAAvB,uBAAuB;CAAE","file":"ActivityWorldClass.vue","sourcesContent":["@media (min-width: 85.375em) {\n  .carousel-3d-container {\n    width: 1340px; } }\n\n@media (min-width: 64em) and (max-width: 85.375em) {\n  .carousel-3d-container {\n    width: 985px; } }\n\n@media (max-width: 64em) and (min-width: 48em) {\n  .carousel-3d-container {\n    width: 730px; } }\n\n.carousel-3d-container figure {\n  margin: 0; }\n\n.carousel-3d-container figcaption {\n  position: absolute;\n  background-color: rgba(0, 0, 0, 0.5);\n  color: #fff;\n  bottom: 0;\n  position: absolute;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12px;\n  min-width: 100%;\n  box-sizing: border-box; }\n"],"sourceRoot":""}]);
 
 // exports
 
@@ -26140,13 +26140,6 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./packages/adminPanel/src/resources/sass/admin.scss":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./resources/js/components/ActivityWorldClass.vue":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26382,7 +26375,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_1__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_2__fortawesome_free_solid_svg_icons__["a" /* faAngleDown */], __WEBPACK_IMPORTED_MODULE_2__fortawesome_free_solid_svg_icons__["c" /* faCalendarCheck */], __WEBPACK_IMPORTED_MODULE_3__fortawesome_free_regular_svg_icons__["b" /* faWindowClose */], __WEBPACK_IMPORTED_MODULE_3__fortawesome_free_regular_svg_icons__["a" /* faQuestionCircle */], __WEBPACK_IMPORTED_MODULE_4__fortawesome_free_brands_svg_icons__["a" /* faFacebookF */], __WEBPACK_IMPORTED_MODULE_4__fortawesome_free_brands_svg_icons__["b" /* faInstagram */], __WEBPACK_IMPORTED_MODULE_4__fortawesome_free_brands_svg_icons__["c" /* faVk */], __WEBPACK_IMPORTED_MODULE_4__fortawesome_free_brands_svg_icons__["d" /* faYoutubeSquare */], __WEBPACK_IMPORTED_MODULE_2__fortawesome_free_solid_svg_icons__["b" /* faBars */], __WEBPACK_IMPORTED_MODULE_2__fortawesome_free_solid_svg_icons__["d" /* faUserCheck */]);
+__WEBPACK_IMPORTED_MODULE_1__fortawesome_fontawesome_svg_core__["c" /* library */].add(__WEBPACK_IMPORTED_MODULE_2__fortawesome_free_solid_svg_icons__["a" /* faAngleDown */], __WEBPACK_IMPORTED_MODULE_2__fortawesome_free_solid_svg_icons__["e" /* faCalendarCheck */], __WEBPACK_IMPORTED_MODULE_3__fortawesome_free_regular_svg_icons__["h" /* faWindowClose */], __WEBPACK_IMPORTED_MODULE_3__fortawesome_free_regular_svg_icons__["f" /* faQuestionCircle */], __WEBPACK_IMPORTED_MODULE_4__fortawesome_free_brands_svg_icons__["c" /* faFacebookF */], __WEBPACK_IMPORTED_MODULE_4__fortawesome_free_brands_svg_icons__["d" /* faInstagram */], __WEBPACK_IMPORTED_MODULE_4__fortawesome_free_brands_svg_icons__["f" /* faVk */], __WEBPACK_IMPORTED_MODULE_4__fortawesome_free_brands_svg_icons__["g" /* faYoutubeSquare */], __WEBPACK_IMPORTED_MODULE_2__fortawesome_free_solid_svg_icons__["d" /* faBars */], __WEBPACK_IMPORTED_MODULE_2__fortawesome_free_solid_svg_icons__["s" /* faUserCheck */]);
 
 //import ModalTemplate from './components/ModalTemplate';
 //import ModalMenuRight from './components/ModalMenuRightTemplate';
@@ -26401,7 +26394,7 @@ var IndexWorldClassRostov = function IndexWorldClassRostov() {
 
 //Vue.component('font-awesome-icon', FontAwesomeIcon);
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('modal-template', function () {
-    return __webpack_require__.e/* import() */(2).then(__webpack_require__.bind(null, "./resources/js/components/ModalTemplate.vue"));
+    return __webpack_require__.e/* import() */(3).then(__webpack_require__.bind(null, "./resources/js/components/ModalTemplate.vue"));
 });
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('modal-menu-right', function () {
     return __webpack_require__.e/* import() */(0/* duplicate */).then(__webpack_require__.bind(null, "./resources/js/components/ModalMenuRightTemplate.vue"));
@@ -26435,27 +26428,10 @@ var vs = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
 /***/ }),
 
-/***/ "./resources/sass/index.scss":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./resources/sass/site.scss":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__("./resources/js/site.js");
-__webpack_require__("./resources/sass/index.scss");
-__webpack_require__("./resources/sass/site.scss");
-module.exports = __webpack_require__("./packages/adminPanel/src/resources/sass/admin.scss");
+module.exports = __webpack_require__("./resources/js/site.js");
 
 
 /***/ })

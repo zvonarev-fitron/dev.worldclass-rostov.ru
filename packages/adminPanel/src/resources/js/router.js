@@ -7,8 +7,9 @@ import Router from 'vue-router';
 
 Vue.use(Router);
 
-import UsersPage from './components/admin/page/UsersPage'
-//const UsersPage = () => import('./components/admin/page/UsersPage.vue');
+//import UsersPage from './components/admin/page/UsersPage'
+const UsersPage = () => import('./components/admin/page/UsersPage.vue');
+const NewUserPage = () => import('./components/admin/page/NewUserPage.vue');
 
 const Foo = { template: '<div>Foo</div>' };
 const Bar = { template: '<div>Bar</div>' };
@@ -27,7 +28,8 @@ const routes = [
     { path: '/admin', component: Idx },
     { path: '/admin/foo', component: Foo },
     { path: '/admin/bar', component: Bar },
-    { path: '/admin/users', component: UsersPage },
+    { path: '/admin/users', name: 'users', component: UsersPage },
+    { path: '/admin/user/new', name: 'new-user', component: NewUserPage },
     { path: '/admin/role', component: Role },
     { path: '/admin/m11', component: M11 },
     { path: '/admin/m12', component: M12 },

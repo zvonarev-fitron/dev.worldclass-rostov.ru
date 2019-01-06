@@ -48,6 +48,7 @@
                         list.active = false;
                     }
                 }
+                this.$emit('onReLoad');
             }
         }
     }

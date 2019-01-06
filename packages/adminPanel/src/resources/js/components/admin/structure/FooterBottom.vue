@@ -11,7 +11,7 @@
     export default {
         name: "FooterBottom",
         computed: {
-            ...mapState('UserTable', ['debug'])
+            ...mapState('Tables', ['debug'])
         }
     }
 </script>

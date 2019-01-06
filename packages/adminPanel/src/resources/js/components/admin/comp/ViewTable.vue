@@ -1,8 +1,9 @@
 <template>
     <div class="table_container">
+        <!--{{ columns }}-->
         <div class="table_top_rules_panel">
             <MultiSelectListDropDown v-bind:list="columns.props"></MultiSelectListDropDown>
-            <SelectCountRowTable :listCount="columns.listCount"></SelectCountRowTable>
+            <SelectCountRowTable :listCount="columns.listCount" v-on:onReLoad="reload"></SelectCountRowTable>
             <button class="sync_users" v-on:click="reload">
                 <i class="sync_icon">
                     <font-awesome-icon v-bind:icon="['fas', 'sync']"></font-awesome-icon>
@@ -10,7 +11,9 @@
             </button>
             <SelectFieldFilter v-bind:fields="columns.props" v-on:onSetSortFieldFilterCode="setSortFieldFilterCode">{{ columns.selectFieldFilterObj.title }}</SelectFieldFilter>
             <SearchInput v-model="columns.search" class="search_input" :list="columns.props"></SearchInput>
-            <button class="add_user">Добавить</button>
+            <button class="add_user">
+                <router-link :to="hrefAddRecord" v-if="!!hrefAddRecord">Добавить</router-link>
+            </button>
         </div>
         <table class="table_item">
             <thead class="thead_item">
@@ -30,7 +33,8 @@
             <tbody class="tbody_item" @contextmenu="context">
                 <tr v-for="(item, index) in columns.items" class="tbody_tr_item" v-on:dblclick="dbClick" v-bind:key="index">
                     <td v-for="(it, code) in item" :data-id="item.id" class="tbody_td_item" v-if="showColumn(code)" :style="textAlign(code)">
-                        {{ it }}
+                        <component :is="currentTabComponent" :value="it" :labels="true" :width="36" :height="16" :disabled="true" :sync="true" v-if="'bool' == propCode(code).type"/>
+                        <span v-else>{{ it }}</span>
                     </td>
                 </tr>
             </tbody>
@@ -46,6 +50,7 @@
 </template>
 
 <script>
+
     import MultiSelectListDropDown from "../ui/MultiSelectListDropDown"
     import SelectCountRowTable from "../ui/SelectCountRowTable"
     import SearchInput from '../ui/SearchInput'
@@ -58,9 +63,26 @@
             columns: {
                 type: Object,
                 requerid: true
+            },
+            hrefAddRecord: {
+                type: String,
+                default: ''
             }
         },
+        computed: {
+            currentTabComponent () {
+                return 'toggle-button';
+            }
+        },
+        mounted(){
+            this.$parent.$emit('onReload');
+        },
         methods: {
+            propCode (code) {
+                for(let p of this.columns.props)
+                    if(code == p.code) return p;
+                return {};
+            },
             setSortFieldFilterCode(obj){
                 this.$parent.setSort(obj);
             },
@@ -108,8 +130,8 @@
             },
             reload(){
 //                alert('reload');
-//                this.$emit('onReload');
-                this.$parent.$emit('onReload');
+                this.$emit('onReload');
+//                this.$parent.$emit('onReload');
             },
             dbClick(event){
                 console.log(event.target.dataset.id);
@@ -148,6 +170,10 @@
         margin: 0 10px;
         border-radius: 5px;
         outline: none;
+        a {
+            text-decoration: none;
+            color: black;
+        }
     }
     .search_input {
         margin-left: 10px;

@@ -1,30 +1,30 @@
 <template>
-    <view-table :columns="columns"/>
+    <view-table :columns="columns" :hrefAddRecord="'/admin/user/new'" v-on:onReload="reload"/>
 </template>
 
 <script>
-    import { mapState, mapMutations } from 'vuex';
-    import ViewTable from '../comp/ViewTable'
+    import { mapGetters, mapMutations, mapActions } from 'vuex';
+    import ViewTable from '../comp/ViewTable';
 
     export default {
         name: "UsersPage",
         components: { ViewTable },
+        data(){
+            return {
+                firstLoad: true
+            }
+        },
         computed: {
-            ...mapState('UserTable', ['columns'])
+              ...mapGetters('Tables', {columns: 'getUsers'})
         },
         mounted() {
-            this.$on('onReload', function(){
-                this.reload();
-            });
+            if(this.firstLoad) this.reload();
+            this.firstLoad = !this.firstLoad;
         },
         methods: {
-            ...mapMutations('UserTable', {reload: 'read', setSort: 'setSort'})
+            ...mapMutations('Tables', {setSort: 'setSortUsers'}),
+            ...mapActions('Tables', {reload: 'readUsers'})
         },
-        watch: {
-            columns: function(){
-                console.log('Изменение');
-            }
-        }
     }
 </script>
 

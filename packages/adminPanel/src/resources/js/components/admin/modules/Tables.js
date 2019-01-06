@@ -1,8 +1,63 @@
 import axios from 'axios';
 
-export const UserTable = {
+export const Tables = {
     namespaced: true,
     state: {
+        users: {
+            selectRowId: 0,
+            selectFieldFilterObj: {},
+            props: [
+                {code: 'id', title: 'Ид', type: 'int', visible: true, sort: false},
+                {code: 'login', title: 'Логин', type: 'str', visible: true, sort: false},
+                {code: 'phone', title: 'Телефон', type: 'phone', visible: true, sort: false},
+                {code: 'email', title: 'Почта', type: 'email', visible: true, sort: false},
+                {code: 'lastname', title: 'Фамилия', type: 'str', visible: true, sort: false},
+                {code: 'name', title: 'Имя', type: 'str', visible: true, sort: false},
+                {code: 'surname', title: 'Отчество', type: 'str', visible: true, sort: false},
+                {code: 'active', title: 'Статус', type: 'bool', visible: true, sort: false},
+                {code: 'create_at', title: 'Создан', type: 'date', visible: false, sort: false},
+                {code: 'updated_at', title: 'Изменен', type: 'date', visible: false, sort: false},
+            ],
+            search: null,
+            listCount: [
+                { count: 10, active: false },
+                { count: 15, active: false },
+                { count: 20, active: false },
+                { count: 25, active: false },
+                { count: 30, active: true },
+                { count: 35, active: false },
+                { count: 40, active: false },
+                { count: 45, active: false },
+                { count: 50, active: false }
+            ],
+            items: [],
+        },
+
+        roles: {
+            selectRowId: 0,
+            selectFieldFilterObj: {},
+            props: [
+                {code: 'id', title: 'Идентификатор', type: 'int', visible: true, sort: false},
+                {code: 'name', title: 'Имя', type: 'str', visible: true, sort: false},
+                {code: 'active', title: 'Статус', type: 'bool', visible: true, sort: false},
+                {code: 'create_at', title: 'Создан', type: 'date', visible: true, sort: false}
+            ],
+            search: null,
+            listCount: [
+                { count: 10, active: false },
+                { count: 15, active: false },
+                { count: 20, active: false },
+                { count: 25, active: false },
+                { count: 30, active: true },
+                { count: 35, active: false },
+                { count: 40, active: false },
+                { count: 45, active: false },
+                { count: 50, active: false }
+            ],
+            items: [],
+        },
+
+
         columns: {
             selectRowId: 0,
             selectFieldFilterObj: {},
@@ -54,75 +109,61 @@ export const UserTable = {
                 // { id: '25', name: 'Алексей', phone: '79525848858', email: 'zvon.lexa@yandex.ru', active: true, create_at: '02-11-2018' }
             ],
         },
+
+
         debug: false,
     },
     getters: {
-        getColumns: (state) => {
-           return state.columns;
-        }
+        getUsers: (state) => { return state.users; },
+        getRoles: (state) => { return state.roles; }
     },
     actions: {
         readUsers: async ({ state, commit }) => {
             let count = 0;
-            for(let i = 0; i < state.columns.listCount.length; i++)
-                count = state.columns.listCount[i].active ? state.columns.listCount[i].count : count;
+            let table = state.users;
+            for(let i = 0; i < table.listCount.length; i++)
+                count = table.listCount[i].active ? table.listCount[i].count : count;
             let send = {
-                fieldsearch: state.columns.selectFieldFilterObj.code,
-                search: state.columns.search,
+                fieldsearch: table.selectFieldFilterObj.code,
+                search: table.search,
                 count: count,
             };
+
+            // console.log(send);
+            // return;
+
             let data =  await axios.post('/admin/users', send);
-            if(200 == data.status) commit('read', data.data);
+            if(200 == data.status) commit('setUsers', data.data);
             else console.log('Статус - ' + data.status);
-        }
+        },
+        readRoles: async ({ state, commit }) => {
+            let count = 0;
+            let table = state.roles;
+            for(let i = 0; i < table.listCount.length; i++)
+                count = table.listCount[i].active ? table.listCount[i].count : count;
+            let send = {
+                fieldsearch: table.selectFieldFilterObj.code,
+                search: table.search,
+                count: count,
+            };
+            let data =  await axios.post('/admin/roles', send);
+            if(200 == data.status) commit('setRoles', data.data);
+            else console.log('Статус - ' + data.status);
+        },
     },
     mutations: {
-        setSort: (state, obj) => { state.columns.selectFieldFilterObj = obj; },
-        read: (state, data) => {
-            state.columns.items = data;
-
-//             axios.post('/admin/users', send)
-//                 .then(responce => {
-//                     state.columns.items = responce.data;
-// //                    state.debug = responce.data;
-//                 })
-//                 .catch(e => {
-//                     state.debug = e;
-//                 })
-        },
-
-        // columnVisibilite: (key, state) => {
-        //     state.columns.props[key].visible = !state.columns.props[key].visible;
-        // },
-        showColumn: (state, code) => {
-            for(let prop of state.columns.props){
-                if(code == prop.code){
-
-                    console.log(code + ' -- ' + prop.visible);
-
-                    return 'qawsedrf';  //prop.visible;
+        setSortUsers: (state, obj) => { state.users.selectFieldFilterObj = obj; },
+        setUsers: (state, data) => {
+            let p = [];
+            for(let i = 0; i < data.length; i++){
+                p[i] = {};
+                for(let j = 0; j < state.users.props.length; j++){
+                    p[i][state.users.props[j].code] = data[i][state.users.props[j].code];
                 }
             }
+            state.users.items = p;
         },
-        textAlign(state, code) {
-            let r = 'center';
-            for(let prop of state.columns.props){
-                if(code == prop.code) {
-                    if('phone' == prop.type) {
-                        r = 'right';
-                        break;
-                    }
-                    if('str' == prop.type){
-                        r = 'center';
-                        break;
-                    }
-                    if('int' == prop.type){
-                        r = 'left';
-                        break;
-                    }
-                }
-            }
-            return 'text-align: ' + r + ';';
-        }
+        setSortRoles: (state, obj) => { state.roles.selectFieldFilterObj = obj; },
+        setRoles: (state, data) => { state.roles.items = data; },
     }
 };

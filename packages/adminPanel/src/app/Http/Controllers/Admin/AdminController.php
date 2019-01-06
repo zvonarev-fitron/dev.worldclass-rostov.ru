@@ -4,6 +4,7 @@ namespace Ringer\AdminPanel\App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class AdminController extends Controller
 {
@@ -15,7 +16,7 @@ class AdminController extends Controller
             [ 'id' => '1', 'href' => '/admin/foo', 'icon' => ['fas', 'tachometer-alt'], 'name' => 'Панель'] ,
             [ 'id' => '2', 'href' => '/admin/bar', 'icon' => ['fas', 'list'], 'name' => 'Меню' ],
             [ 'id' => '3', 'href' => '/admin/users', 'icon' => ['fas', 'users'], 'name' => 'Пользователи' ],
-            [ 'id' => '4', 'href' => '/admin/role', 'icon' => ['fab', 'critical-role'], 'name' => 'Роли', 'count' => 100, 'children' =>
+            [ 'id' => '4', 'href' => '/admin/role', 'icon' => ['fab', 'critical-role'], 'name' => 'Роли', 'count' => 10, 'children' =>
                 [
                     [ 'id' => '28', 'href' => '/admin/m11', 'icon' => ['fas', 'place-of-worship'], 'name' => 'Место 11' ],
                     [ 'id' => '29', 'href' => '/admin/m12', 'icon' => ['fas', 'place-of-worship'], 'name' => 'Место 22' ],
@@ -32,7 +33,7 @@ class AdminController extends Controller
             [ 'id' => '12', 'href' => '/admin', 'icon' => ['fas', 'chart-area'], 'name' => 'Акции' ],
             [ 'id' => '13', 'href' => '/admin', 'icon' => ['fas', 'user-tie'], 'name' => 'Тренеры' ],
             [ 'id' => '14', 'href' => '/admin', 'icon' => ['fas', 'clipboard-list'], 'name' => 'Расписание' ],
-            [ 'id' => '15', 'href' => '/admin', 'icon' => ['fas', 'place-of-worship'], 'name' => 'Место', 'children' =>
+            [ 'id' => '15', 'href' => '/admin/user/new', 'icon' => ['fas', 'place-of-worship'], 'name' => 'Новое Место', 'children' =>
                 [
                     [ 'id' => '16', 'href' => '/admin', 'icon' => ['fas', 'place-of-worship'], 'name' => 'Место 1', ],
                     [ 'id' => '17', 'href' => '/admin', 'icon' => ['fas', 'place-of-worship'], 'name' => 'Место 2', 'children' =>
@@ -72,68 +73,7 @@ class AdminController extends Controller
                 ]
             ],
         ];
-        $this->params['user_table'] = [
-            [ 'id' => 1, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 2, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 3, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 4, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 5, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 6, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 7, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 8, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 9, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 10, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 11, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 12, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 13, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 14, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 15, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 16, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 17, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 18, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 19, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 20, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 21, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 22, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 23, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 24, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 25, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 26, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 27, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 28, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 29, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 30, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 31, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 32, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 33, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 34, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 35, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 36, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 37, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 38, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 39, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 40, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 41, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 42, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 43, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 44, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 45, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 46, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 47, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 48, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 49, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 50, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 51, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 52, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 53, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 54, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 55, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 56, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 57, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 58, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 59, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-            [ 'id' => 60, 'name' => 'zvonlexa', 'phone' => '79525848858', 'email' => 'zvon.lexa@yandex.ru', 'active' => true, 'create_at' => '02-11-2018' ],
-        ];
+        $this->params['user_table'] = [];
     }
 
     public function menus()
@@ -144,14 +84,17 @@ class AdminController extends Controller
     public function users(Request $request)
     {
         if(0 < $request->count){
-            $collection = collect($this->params['user_table']);
-            $slice = $collection->slice(0, $request->count);
-            return json_encode($slice);
+            $user_table = User::limit($request->count)->get();
         }
         else {
-            return json_encode($this->params['user_table']);
+            $user_table = User::all();
         }
-//        return $request;
-        //return json_encode($this->params['user_table']);
+        if(isset($request->search) && isset($request->fieldsearch) && 0 < strlen($request->search)) {
+            $this->params['user_table'] = $user_table->where($request->fieldsearch, $request->search);
+        }
+        else {
+            $this->params['user_table'] = $user_table;
+        }
+        return json_encode($this->params['user_table']);
     }
 }

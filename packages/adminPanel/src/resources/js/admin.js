@@ -69,10 +69,13 @@ library.add(
     faAngleLeft
 );
 
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
-import axios from 'axios';
+import ToggleButton from './components/admin/ui/VueJsToggleButton/ToggleButton';
+Vue.component('toggle-button', ToggleButton);
+
+// import axios from 'axios';
 //Vue.component('axios', axios);
 
 import AdminPanel from './components/admin/AdminPanel';
@@ -82,4 +85,5 @@ const admin = new Vue({
     router,
     ...AdminPanel
 }).$mount('#admin');
-faTimesCircle
+
+// faTimesCircle
